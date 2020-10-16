@@ -53,6 +53,11 @@ a{
 	font-size: 18px;
 }
 
+.contact a:hover{
+	text-decoration: underline;
+	color: #666;
+}
+
 .btn{
 	background: #070707;
 	display: block;
@@ -65,11 +70,12 @@ a{
 	color: #D9E59B;
 }
 
-
-.contact a:hover{
-	text-decoration: underline;
-	color: #666;
+.btn:hover{
+	border: 1px solid #000;
+	color: #000;
+	background: #C1FDBD;
 }
+
 
 .my_social_media img{
 	height: 40px;
