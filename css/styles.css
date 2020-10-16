@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: open sans,sans-serif;
+	color: white;
+}
+
+.left_column{
+	width: 40%;
+	height: 100vh;
+	background: url(../img/background_green.jpg) no-repeat center top / cover;
+	display: block;
+	float: left;
+}
+
+.right_column{
+	width: 60%;
+	height: 100vh;
+	background: url(../img/background_black.jpg) no-repeat center top / cover;
+	display: block;
+	float: right;
+}
+
+.container_left{
+	width: 50%;
+	min-width: 207px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.container_right{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.photo img{
+	margin: 0 auto;
+	border: 4px solid;
+	border-color: #111;
+	border-radius: 5%;
+
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+
+.contact a:hover{
+	text-decoration: underline;
+	color: #666;
+}
+
+.my_social_media img{
+	height: 40px;
+	width: 40px;
+}
+
+.my_social_media img:hover{
+	border: 1px solid rgba(0,0,0,0);
+	opacity: .9;
+}
+
+.my_social_media h2, .contact h2 {
+	color: #000;
+	padding: 25px 0 15px 0;	
+}
+
+li{
+	display: block;
+	padding: 5px 0;
+}
+
+.name h1{
+	font-size: 35px;
+	
+}
+
+.container_right h1, h3{
+	display: inline-block;
+	color: #D9E59B;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	border-bottom: 3px solid #D9E59B
+}
+
+.name h4{
+	font-size: 20px;
+	color: #D9E59B;
+	font-weight: normal;
+	text-transform: none;
+}
+
+.about_me, .education, .additional_educationh, .interest{
+	padding-top: 30px;
+	
+}
+
+.interests {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+p{
+	padding-top: 8px;
+	line-height: 1.5;
+}
