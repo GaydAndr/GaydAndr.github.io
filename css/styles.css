@@ -53,6 +53,18 @@ a{
 	font-size: 18px;
 }
 
+.btn{
+	background: #070707;
+	display: block;
+	width: 200px;
+	border-radius: 15px;
+	padding: 10px 0;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	color: #D9E59B;
+}
+
 
 .contact a:hover{
 	text-decoration: underline;
