@@ -9,6 +9,13 @@ body{
 	color: white;
 }
 
+.clearfix{
+  clear: both;
+  content: '';
+	display: table;
+	width: 100%;
+}
+
 .left_column{
 	width: 40%;
 	height: 100vh;
@@ -53,27 +60,11 @@ a{
 	font-size: 18px;
 }
 
+
+
 .contact a:hover{
 	text-decoration: underline;
 	color: #666;
-}
-
-.btn{
-	background: #070707;
-	display: block;
-	width: 200px;
-	border-radius: 15px;
-	padding: 10px 0;
-	margin: 0 auto;
-	text-align: center;
-	font-weight: bold;
-	color: #D9E59B;
-}
-
-.btn:hover{
-	border: 1px solid #000;
-	color: #000;
-	background: #C1FDBD;
 }
 
 
@@ -120,6 +111,30 @@ li{
 .about_me, .education, .additional_educationh, .interest{
 	padding-top: 30px;
 	
+}
+
+.btn{
+	background: #D9E59B;
+	display: block;
+	width: 150px;
+	border-radius: 15px;
+	border: 2px solid #D9E59B;
+	padding: 10px 0;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	color: #070707;
+}
+
+.btn:hover{
+	
+	color: #D9E59B;
+	background: #252525;
+}
+
+.work li{
+	float: left;
+	padding-top: 20px;
 }
 
 .interests {
