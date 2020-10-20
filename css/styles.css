@@ -135,6 +135,11 @@ li{
 .work li{
 	float: left;
 	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.work{
+	margin-left: -20px;
 }
 
 .interests {
