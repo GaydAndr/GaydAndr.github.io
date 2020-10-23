@@ -1,0 +1,85 @@
+/*ДРУГА ВПРАВА*/
+body{
+	font-family: Verdana;
+}
+
+h1{
+	color: green;
+}
+
+article header p{
+	background-color: red;
+	color: white;
+}
+
+article figure{
+	width: 600px;
+	border: 3px solid black;
+	padding: 5px;
+}
+
+article figure img{
+	width: 100%;
+}
+
+article{
+	width: 800px;
+}
+
+/*МЕНЮ*/
+
+.site-nav{
+	background-color: PaleVioletRed;
+	list-style: none;
+	padding: 0;
+	width: 200px;
+	border: 1px solid MediumVioletRed;
+}
+
+.site-nav .site-nav-item{
+	border-bottom: 1px solid MediumVioletRed;
+	padding: 5px;
+}
+
+.site-nav .site-nav-item:last-child{
+	border-bottom: 0;
+}
+
+.site-nav .site-nav-item a{
+	color: white;
+	text-decoration: none;
+}
+
+.site-nav .site-nav-item a:hover{
+	text-decoration: underline;
+}
+
+/*ПЕРХІД МІЖ ЗАВДАННЯМИ*/
+.exercise{
+	list-style: none;
+}
+
+.text, .exercise li{
+	margin-right: 10px;
+	background: black;
+	width: 100px;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	float: left;
+}
+
+
+.exercise a{
+	display: block;
+	color: green;
+	text-decoration: none;
+	
+}
+
+.exercise li:hover{
+	background: white;
+	color: black;
+}
