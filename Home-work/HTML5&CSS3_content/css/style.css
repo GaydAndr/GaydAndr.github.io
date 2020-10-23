@@ -32,8 +32,9 @@ article{
 	background-color: PaleVioletRed;
 	list-style: none;
 	padding: 0;
-	width: 200px;
+	width: 300px;
 	border: 1px solid MediumVioletRed;
+	margin: 0 auto;
 }
 
 .site-nav .site-nav-item{
@@ -46,6 +47,7 @@ article{
 }
 
 .site-nav .site-nav-item a{
+	display: block;
 	color: white;
 	text-decoration: none;
 }
