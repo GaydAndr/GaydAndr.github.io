@@ -22,6 +22,7 @@ body{
 	background: url(../img/background_green.jpg) no-repeat center top / cover;
 	display: block;
 	float: left;
+	overflow: auto;
 }
 
 .right_column{
@@ -30,6 +31,7 @@ body{
 	background: url(../img/background_black.jpg) no-repeat center top / cover;
 	display: block;
 	float: right;
+	overflow: auto;
 }
 
 .container_left{
