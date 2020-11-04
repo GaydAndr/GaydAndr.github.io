@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+	font-family: arial, sans-serif;
+	font-size: 15px;
+	color: #000;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.container{
+	min-width: 1100px;
+	text-align: center;
+}
+
+.title{
+	padding: 50px 0 70px 0;
+}
+
+h1{
+	font-size: 26px;
+	font-weight:200;
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+.product_category a{
+	color: #7a879f;
+}
+
+
+.wrapper{
+	height: 455px;
+	width: 974px;
+	border: 1px solid #d3d3d3;
+	margin: 0 auto;
+	position: relative;
+}
+
+.wrapper:after, .wrapper:before{
+	content: '';
+	height: 36px;
+	width: 36px;
+	border-radius: 50%;
+	border: 2px solid #d3d3d3;
+	background: #fff;
+	position: absolute;
+	top: 78px;
+	line-height: 2;
+	color: #d3d3d3;
+	font-size: 18px
+}
+
+.wrapper:before{
+	content: '<';
+	left: -20px;
+}
+
+.wrapper:after{
+	content: '>';	
+	right: -20px;
+}
+
+
+.product{
+	height: 100%;
+	width: 25%;
+	border-right: 1px solid #d3d3d3;
+	float: left;
+	padding: 0 20px;
+	position: relative;
+}
+
+.product:last-child{
+	border: none;
+}
+
+.product_stiker {
+	height: 70px;
+	width: 70px;
+	position: absolute;
+	right: 10px;
+	top: -35px;
+	outline: 4px solid #fff;
+	border-radius: 50%;
+	background: #009de1;
+	color: #fff;
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+}
+
+.product_stiker_new{
+	background: #86b022;
+	padding-left: 6px;  /*???*/
+}
+
+.product_stiker_none{
+	display: none;
+}
+
+.product_category{
+	padding: 40px 0;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.product_stiker, .product_category, .product_button_soon{
+	font-weight: normal;
+} 
+
+.product_image{
+	padding: 20px 0 20px 0;
+}
+
+.product_image img{
+	height: 150px;
+}
+
+
+.product_title{
+	font-size: 16px;
+	padding-bottom: 28px;
+}
+
+.product_title a{
+	color: #009be1;
+}
+
+.product_price:after{
+	content: 'грн';
+	font-size:12px;
+}
+
+.discount{
+	font-size: 10px;
+	text-decoration: line-through;
+}
+
+.product_button{
+	position: relative;
+	top: 24px;
+}
+
+.product_button a{
+	height: 40px;
+	width: 140px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 12px;
+	background: #f0e524;
+	color: #000;
+}
+
+.product_button_soon{
+	padding-top: 18px;
+}
+
+.product_button_soon a{
+	padding-top: 3px;
+	background: #cc3399;
+	color: #fff;
+}

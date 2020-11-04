@@ -1,0 +1,95 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clearfix{
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+body{
+  font-family: arial, sans-serif;
+  font-size: 22px;
+  margin-top: 50px;
+}
+
+.calc_wrap{
+	height: 640px;
+	width: 420px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.calc_wrap, .input input, .battons div{
+	border: 4px solid #5f9ea0;
+	border-radius: 15px;
+	color: #5f9ea0;
+}
+
+.title{
+	height: 58px;
+	width: 100%;
+    padding: 10px;
+	background: #5f9ea0;
+	text-align: right;
+	line-height: 2;
+	font-size: 20px;
+	color: #fff;
+}
+
+.input{
+	padding: 16px 0 16px 10px;
+}
+
+.input input{
+	height: 58px;
+	width: 390px;
+	outline: none;
+	text-align: right;
+	padding-top: 2px;
+	font-size: 40px;
+}
+
+.batery {
+	width: 136px;
+	height: 50px;
+	background: #5f9ea0;
+	float: right;
+	display: block;
+	margin: 0 14px 20px 0;
+}
+
+.battons div{
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 3;
+	margin: 4px 5px;
+	cursor: pointer;
+}
+
+.battons div:hover{
+	background: #409f5f;
+	border-color: #409f5f;
+	box-shadow: 5px 5px 15px #5f9ea0;
+	color: #fff;
+}
+
+.battons div:active{
+	box-shadow: none;
+	color: #81f5a7;
+}
+
+.row1, .row2, .row3, .row4{
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
