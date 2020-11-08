@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.page_wrap{
+	background: #251e20; /* Old browsers */
+	background: -moz-linear-gradient(top,  #251e20 0%, #453937 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #251e20 0%,#453937 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #251e20 0%,#453937 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#251e20', endColorstr='#453937',GradientType=0 ); /* IE6-9 */
+	height: 100vh;
+}
+
+.main{
+	width: 940px;
+	height: 390px;
+	position: absolute;
+	top: 100px;
+	left: 150px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.left-c{
+	width: 330px;
+	height: 100%;
+	background: url(../img/Burgers_img.jpg)no-repeat center top / cover;
+	float: left;
+}
+
+.action{
+	width: 340px;
+	height: 212px;
+	top: 155px;
+	left: -14px;
+	color: #fff;
+}
+
+.action, .btn_menu a{
+	background: #000;
+	position: absolute;
+}
+
+.action_title{
+	font-size: 50px; 
+	line-height: .8;
+	padding: 40px 0 10px 0;
+}
+
+.action_price, .menu_price, .btn_menu a{
+font-family: sans-serif;
+}
+
+.action_price span{
+	color: #f6c73a;
+}
+
+.right-c{
+	width: 610px;
+	height: 100%;
+	background: #fff;
+	float: right;
+	padding: 0 16px;
+}
+
+.right-c_menu_title{
+	padding: 45px 0 35px 0;
+	font-size: 18px;
+	display: block;
+}
+
+.grid_menu{
+	display: grid;
+	justify-items: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 80px 80px 80px;
+	padding: 0 30px;
+}
+
+.grid_menu_item{
+	text-align: center;
+	width: 200px;
+	border-bottom: 1px solid #d5d5d5;
+	padding-top: 20px;
+	position: relative;
+}
+
+.grid_menu_item:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #d5d5d5;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  transform: rotate(45deg);
+}
+
+.grid_menu_item:hover{
+	background: #d5d5d5;
+}
+
+.menu_name{
+	font-size: 18px;
+	padding-bottom: 3px;
+}
+
+.menu_price{
+	color: #999;
+}
+
+.lowercase{
+	text-transform: none;
+}
+
+.btn_menu a{
+	height: 55px;
+	width: 176px;
+	display: block;
+	right: 0;
+	bottom: -65px;
+	text-decoration: none;
+	color: #fff;
+	line-height: 3.5;
+}
+
+.btn_menu a{
+	
+}
+
+.btn_menu a:hover{
+	color: #000;
+	background-color: #f6c73a;
+}
