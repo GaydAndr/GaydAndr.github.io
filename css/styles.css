@@ -83,15 +83,15 @@ a{
 	color: #666;
 }
 
-.my_social_media li{
-	display: inline-block;
-	/*padding: 0 5px;*/
+.my_social_media ul{
+	margin-button:20px;
 }
 
 .my_social_media li{
 	background: url(../img/css_sprites.png) 0 0/200px 100px no-repeat;
 	height: 50px;
 	width: 50px;
+        display: inline-block;
 }
 
 
