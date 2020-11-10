@@ -11,6 +11,7 @@
 	background: linear-gradient(to bottom,  #251e20 0%,#453937 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#251e20', endColorstr='#453937',GradientType=0 ); /* IE6-9 */
 	height: 100vh;
+        width: 100%;
 }
 
 .main{
@@ -128,10 +129,6 @@ font-family: sans-serif;
 	text-decoration: none;
 	color: #fff;
 	line-height: 3.5;
-}
-
-.btn_menu a{
-	
 }
 
 .btn_menu a:hover{
