@@ -38,19 +38,19 @@ a{
 }
 
 .button, button {
-background: rgb(224,21,14); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(224,21,14,1) 0%, rgba(255,54,112,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(224,21,14,1) 0%,rgba(255,54,112,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(224,21,14,1) 0%,rgba(255,54,112,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0150e', endColorstr='#ff3670',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: rgb(224,21,14); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(224,21,14,1) 0%, rgba(255,54,112,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(224,21,14,1) 0%,rgba(255,54,112,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(224,21,14,1) 0%,rgba(255,54,112,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0150e', endColorstr='#ff3670',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .button:hover , button:hover{
-background: rgb(76,76,76); /* Old browsers */
-background: -moz-linear-gradient(-45deg,  rgba(76,76,76,1) 0%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(135deg,  rgba(76,76,76,1) 0%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: rgb(76,76,76); /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  rgba(76,76,76,1) 0%, rgba(19,19,19,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(19,19,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg,  rgba(76,76,76,1) 0%,rgba(19,19,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 #tour h2, #gallery h2{
@@ -231,7 +231,7 @@ h1{
 }
 
 .pitch p{
-margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 .subscribe-form input{
@@ -258,9 +258,9 @@ button{
 }
 
 .social a:hover{
-color: #de0204;
-font-size: 35px;
-bottom: 12px;
+	color: #de0204;
+	transform: scale(2, 2);
+	transition: 0.3s;
 }
 
 .social a:nth-child(1){
@@ -285,30 +285,6 @@ bottom: 12px;
 
 .social a:nth-child(6){
 	left: 59%;
-}
-
-.social a:hover:nth-child(1){
-	left: 38%;
-}
-
-.social a:hover:nth-child(2){
-	left: 42%;
-}
-
-.social a:hover:nth-child(3){
-	left: 46%;
-}
-
-.social a:hover:nth-child(4){
-	left: 50%;
-}
-
-.social a:hover:nth-child(5){
-	left: 54%;
-}
-
-.social a:hover:nth-child(6){
-	left: 58%;
 }
 
 .copyright{
