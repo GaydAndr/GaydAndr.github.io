@@ -248,16 +248,70 @@ button{
 
 /* Footer */
 
+.social{
+	position: relative;
+}
+
 .social a{
-	display: inline-block;
-	margin: 0 6px;
+	position: absolute;
+	bottom: 20px;
 }
 
 .social a:hover{
 color: #de0204;
+font-size: 35px;
+bottom: 12px;
+}
+
+.social a:nth-child(1){
+	left: 39%;
+}
+
+.social a:nth-child(2){
+	left: 43%;
+}
+
+.social a:nth-child(3){
+	left: 47%;
+}
+
+.social a:nth-child(4){
+	left: 51%;
+}
+
+.social a:nth-child(5){
+	left: 55%;
+}
+
+.social a:nth-child(6){
+	left: 59%;
+}
+
+.social a:hover:nth-child(1){
+	left: 38%;
+}
+
+.social a:hover:nth-child(2){
+	left: 42%;
+}
+
+.social a:hover:nth-child(3){
+	left: 46%;
+}
+
+.social a:hover:nth-child(4){
+	left: 50%;
+}
+
+.social a:hover:nth-child(5){
+	left: 54%;
+}
+
+.social a:hover:nth-child(6){
+	left: 58%;
 }
 
 .copyright{
 	font-size: 14px;
-	margin: 20px 0 27px 0;
+	margin: 60px 0 27px 0;
 }
