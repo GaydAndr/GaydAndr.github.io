@@ -72,7 +72,7 @@ ul {
   margin: 0 auto;
   max-width: 85%;
   min-height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
   position: relative;
   line-height: 1;
@@ -148,7 +148,7 @@ footer {
 		padding: 25px ;
 	}
 
-  .propose-item {
+        .propose-item {
 		float: left;
 		margin-right: 30px;
 
@@ -185,10 +185,10 @@ footer {
 	}
 
 	.footer__link {
-  	margin-bottom: 20px;
+  	       margin-bottom: 20px;
 	}
 
 	.unsubscrib {
-  	padding: 15px 0 30px ;
+  	       padding: 15px 0 30px ;
 	}
 }
