@@ -1,0 +1,223 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
+.container {
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Header */
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.brand {
+  font-size: 26px;
+  padding: 15px;
+  color: #59abe3;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  padding: 15px;
+  font-size: 20px;
+  color: #bdbdbd;
+}
+
+.menu a:hover{
+	color: #59abe3;
+}
+
+.jumbotron {
+  background: url(../img/jumbotron.jpg)  no-repeat;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.button {
+  padding: 23px 30px;
+  background: #fa5ba5;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.button:hover{
+	 background: #59abe3;
+}
+
+/* Services */
+
+.services h2,
+.blog h2 {
+  margin: 45px 0;
+}
+
+.services__items {
+  display: flex;
+  flex-direction: column;
+}
+
+.service {
+  text-align: center;
+  color: #979797;
+  margin: 30px 30px;
+}
+.service i {
+  padding-bottom: 35px;
+}
+
+/* Blog */
+
+.blog{
+  margin-bottom: 50px;
+}
+
+.blog__items {
+  display: flex;
+  flex-direction: column;
+}
+.post {
+  display: flex;
+  flex-direction: column;
+}
+
+.post:first-child {
+  margin-bottom: 30px;
+}
+
+.post img {
+  display: flex;
+  width: 100%;
+  max-width: 280px;
+  max-height: 230px;
+  order: 4;
+  margin: 30px 0 0 0;
+}
+
+.post h3 {
+  padding: 30px 0px 10px;
+}
+
+.post p {
+  color: #979797;
+}
+.date {
+  padding: 20px 0;
+}
+
+/* Footer */
+
+footer {
+  height: 150px;
+  background: #38404b;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .brand {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #9eaabb;
+}
+footer .menu {
+  display: none;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 920px){
+  header .container, .blog, .services{
+    padding: 0 170px;
+  }
+  footer{
+    height: 250px;
+  }
+
+  footer .brand{
+    margin-bottom: 0;
+  }
+  footer .menu{
+    display: flex;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 570px){
+  .container{
+    padding: 0 25px;
+  }
+
+  .post{
+    flex-direction: row;
+    flex-wrap: nowrap;
+  	justify-content: center;
+	  align-items: center
+  }
+
+  .post img{
+    order: 0;
+    padding-right: 20px;
+  }
+
+  .services__items{
+    flex-direction: row;
+  }
+
+  .service{
+    margin: 30px 15px;
+  }
+}
+
+@media screen and (min-width: 767px){
+  header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu{
+    display: flex;
+  }
+}
