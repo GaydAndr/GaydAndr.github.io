@@ -41,6 +41,10 @@ header .container {
   color: #59abe3;
 }
 
+.menu{
+	text-align: center;
+}
+
 .menu li {
   list-style: none;
 }
