@@ -125,7 +125,7 @@ header .container {
 .post img {
   display: flex;
   width: 100%;
-  max-width: 280px;
+ 
   max-height: 230px;
   order: 4;
   margin: 30px 0 0 0;
@@ -168,9 +168,15 @@ footer .menu {
 }
 
 @media screen and (min-width: 920px){
+	
   header .container, .blog, .services{
     padding: 0 170px;
   }
+	
+  .post img{
+     max-width: 280px;
+  }
+	
   footer{
     height: 250px;
   }
