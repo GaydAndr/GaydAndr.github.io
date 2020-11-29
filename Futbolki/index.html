@@ -4,8 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Futbolki</title>
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 	<link href="css/normalize.css" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/cfc9a07a30.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/main.css">
@@ -14,6 +12,7 @@
 <body>
 	<div class="page__wrap">
 		<header>
+			
 			<div class="container">
 				<div class="row top">
 					<div class="col buttons">
@@ -25,23 +24,29 @@
 					</a>
 					</div>
 					<div class="col social">
-						<div class="social__media"><i class="fas fa-bold"></i></div>
-						<div class="social__media"><i class="fab fa-odnoklassniki"></i></div>
-						<div class="social__media"><i class="fab fa-facebook-f"></i></div>
+						<div class="social__media">
+							<a href="#"><i class="fas fa-bold"></i></a>
+						</div>
+						<div class="social__media">
+							<a href=""><i class="fab fa-odnoklassniki"></i></a>
+						</div>
+						<div class="social__media">
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+						</div>
 					</div>
-					<div class="col top__link">
-						<i class="fab fa-skype"></i><a href="#"> uka.ua</a>
-						<img src="images/icq.png" alt=""><a href="#"> 210-376-022</a>
-						<i class="fas fa-at"></i><a href="#"> info@uka.ua</a>
+					<div class="col top__links links">
+						<i class="fab fa-skype"></i><a href="#" class="br-b"> uka.ua</a>
+						<img src="images/icq.png" alt=""><a href="#" class="br-b"> 210-376-022</a>
+						<i class="fas fa-at"></i><a href="#" class="br-b"> info@uka.ua</a>
 					</div>	
 				</div>		
 				<div class="row main__title">
 					<div class="col phone-sign">
 						<div class="main__phone" >
-							<a class="dots" href="#">
+							<a class="br-b-dot" href="#">
 								Київстар
 							</a>
-							<a href="#">
+							<a href="#" class="bold">
 								(097) 794 01 20
 							</a>
 						</div>
@@ -55,7 +60,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col title">
+					<div class="col title tx-a-c uppercase">
 						<h1>
 							<span class="blue">
 								Модна
@@ -72,21 +77,21 @@
 					</div>
 					<div class="col user__choise">
 						<div>
-							<a href="#"><i class="fas fa-shopping-cart"></i>Мій кошик порожній</a>
+							<i class="fas fa-shopping-cart blue"></i><a href="#" class="br-b">Мій кошик порожній</a>
 						</div>
 						<div>
-							<a href="#"><i class="far fa-heart"></i>Мої бажання</a>	
+							<i class="far fa-heart blue"></i><a href="#" class="br-b">Мої бажання</a>	
 						</div>
 					</div>
 				</div>
 				<div class="row menu__main">
-					<div class="nav__btn">
-						<a id="nav__btn" href="#">Меню</a>
+					<div class="nav__btn  tx-a-c">
+						<div id="btn" class="click_btn" >Меню</div>
 						<span class="arrow"></span>
 					</div>
-					<nav class="menu">
+					<nav class="menu nav" id="menu">
 						<ul>
-							<li><a href="#" class="italic">Про нас</a></li>
+							<li><a href="#" class="italic blue ">Про нас</a></li>
 							<li><a href="#" class="italic">Свій малюнок</a></li>
 							<li><a href="#" class="italic">Оплатата та доставка</a></li>
 							<li><a href="#" class="italic">Блог</a></li>
@@ -98,13 +103,13 @@
 					</nav>				
 				</div>
 				<div class="row menu__catalog">
-					<div class="catalog__btn">
-						<a id="catalog__btn" href="#">Каталог</a>
+					<div class="catalog__btn tx-a-c">
+						<div id="catalog__btn" class="click_btn">Каталог</div>
 						<span class="arrow"></span>
 					</div>
-					<nav>
+					<nav id="nav" class="nav">
 						<ul class="catalog__menu">
-							<li><a href="#" class="catalog">Футболки</a></li>
+							<li><a href="#" class="catalog blue ">Футболки</a></li>
 							<li><a href="#" class="catalog">Светри</a></li>
 							<li><a href="#" class="catalog">Штани</a></li>
 							<li><a href="#" class="catalog">Кружки</a></li>
@@ -124,14 +129,14 @@
 				<div class="row propose__body">
 					<div class="col propose__slider">
 						<div class="propose__text">
-							<h3>вдягни родину</h3>
-							<p>
+							<h3 class="bold uppercase blue">вдягни родину</h3>
+							<p class="f-z-14">
 								Все наши сильные переживания, как физические, так и эмоциональные, случаются в теле
 							</p>
-							<span class="price"><i class="fas fa-tag"></i>1000 грн</span>
+							<span class="prise"><i class="fas fa-tag"></i>1000 грн</span>
 							<div class="order">	
-							<a href="#" class="italic">Замовити прямо зараз</a>
-							<spa class="sticker">-10%</spa>
+							<a href="#" class="italic br-b">Замовити прямо зараз</a>
+							<spa class="sticker tx-a-c">-10%</spa>
 							</div>
 						</div>
 						<img src="images/couple-1.png" alt="">
@@ -139,87 +144,89 @@
 					<div class=" col propose__items">
 						<div class="propose__item">
 							<div class="product">
-								<a href="#">Футболка Sherlock</a>
-								<a href="#">(Шерлок Холмс)</a>
-								<span class="price"><i class="fas fa-tag"></i>180 грн</span>
+								<a href="#" class="br-b">Футболка Sherlock</a>
+								<a href="#" class="br-b">(Шерлок Холмс)</a>
+								<span class="prise"><i class="fas fa-tag"></i>180 грн</span>
 							</div>
 							<img src="images/futbolki/futbolka-sm-2.png" alt="">
 						</div>
 						<div class="propose__item">
 							<div class="product">
-								<a href="#">Футболка Sherlock</a>
-								<a href="#">(Шерлок Холмс)</a>
-								<span class="price"><i class="fas fa-tag"></i>180 грн</span>
+								<a href="#" class="br-b">Футболка Sherlock</a>
+								<a href="#" class="br-b">(Шерлок Холмс)</a>
+								<span class="prise"><i class="fas fa-tag"></i>180 грн</span>
 							</div>
 							<img src="images/futbolki/futbolka-sm-3.png" alt="">
 						</div>
 						<div class="propose__item">
 							<div class="product">
-								<a href="#">Футболка Sherlock</a>
-								<a href="#">(Шерлок Холмс)</a>
-								<span class="price"><i class="fas fa-tag"></i>180 грн</span>
+								<a href="#" class="br-b">Футболка Sherlock</a>
+								<a href="#" class="br-b">(Шерлок Холмс)</a>
+								<span class="prise"><i class="fas fa-tag"></i>180 грн</span>
 							</div>
 							<img src="images/futbolki/futbolka-sm-1.png" alt="">
 						</div>
 					</div>
 				</div>
-				<div class="propose__like">
-					<h3>Подобається наш магазин? Розповідай друзям</h3>
-					<div class="likes">
-						<div class="like"></div>
-						<div class="like"></div>
-						<div class="like"></div>
-						<div class="like"></div>
-					</div>
+			</div>
+		</section>
+		<section class="share">
+			<div class="container">
+				<h3 class="bold tx-a-c uppercase blue">Подобається наш магазин? Розповідай друзям</h3>
+				<div class="share__item">
+					<div class="like"></div>
+					<div class="like"></div>
+					<div class="like"></div>
+					<div class="like"></div>
 				</div>
 			</div>
 		</section>
 		<section class="servis">
 			<div class="container">
 				<div class="row">
-					<div class="service__item col">
+					<div class="service__item col f-z-14">
 						<div class="servise__icon"><img src="images/v-s-o-1.png" alt=""></div>
 						<div class="servise__text">
-							<span class="italic">
+							<span class="italic bold ">
 								Індівидуальній малюнок
 							</span>
-							<span class="uppercase bold">
+							<span class="uppercase bold f-z-16">
 								Створи свій імідж
 							</span>
-							<p>
+							<p >
 								Все наши сильные переживания, как физические, так и эмоциональные, случаются в теле.
 							</p>
-							<a href="#"> Читаті більше</a>
+							<a href="#" class="br-b"> Читаті більше</a>
 						</div>
 					</div>
-					<div class="service__item col">
+					<div class="service__item col f-z-14">
 						<div class="servise__icon"><img src="images/v-s-o-2.png" alt=""></div>
 						<div class="servise__text">
-							<span class="italic">
+							<span class="italic bold ">
 								Якісний сервіс
 							</span>
-							<span class="uppercase  bold">
+							<span class="uppercase bold f-z-16">
 								Особистий консультант
 							</span>
 							<p>
 								Все наши сильные переживания, как физические, так и эмоциональные, случаются в теле.
 							</p>
-							<a href="#"> Читаті більше</a>
+							<a href="#" class="br-b"> Читаті більше</a>
 						</div>
 					</div>
-					<div class="service__item col">
+					<div class="service__item col f-z-14">
 						<div class="servise__icon"><img src="images/v-s-o-3.png" alt=""></div>
 						<div class="servise__text">
-							<span class="italic">
+							<span class="italic bold ">
 								Безкоштовна доставка
 							</span>
-							<span class="uppercase bold">
+							<span class="uppercase bold f-z-16">
 								Доставка до дверей
 							</span>
 							<p>
 								Все наши сильные переживания, как физические, так и эмоциональные, случаются в теле.
 							</p>
-							<a href="#"> Читаті більше</a>
+							<a href="#" class="br-b"> Читаті більше</a>
 						</div>
 					</div>
 				</div>
@@ -227,146 +234,148 @@
 		</section>
 		<section class="main">
 			<div class="container">
-				<h4>Дизайнерскі футболки</h4>
-				<a href="#" class="italic main__go-to">Перейти у розділ</a>
+				<h4 class="tx-a-c blue">Дизайнерскі футболки</h4>
+				<div class=" main__go-to tx-a-c"><a href="#" class=" italic br-b">Перейти у розділ</a></div>
 				<div class="row">
 					<div class="col product">
 						<img src="images/futbolki/futbolka-lg-1.png" alt="">
-						<div class="item__title bold">Футболка Sherlock</div>
+						<div class="item__title">Футболка Sherlock</div>
 						<span>(Шерлок Холмс)</span>
 						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
-						<a href="" class="italic">Замовити в один клік</a>
+						<a href="" class="italic br-b">Замовити в один клік</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-lg-2.png" alt="">
-						<div class="item__title bold">Футболка Sherlock</div>
+						<div class="item__title ">Футболка Sherlock</div>
 						<span>(Шерлок Холмс)</span>
 						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
-						<a href="" class="italic">Замовити в один клік</a>
+						<a href="" class="italic br-b">Замовити в один клік</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-lg-3.png" alt="">
-						<div class="item__title bold">Футболка Sherlock</div>
+						<div class="item__title ">Футболка Sherlock</div>
 						<span>(Шерлок Холмс)</span>
 						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
-						<a href="" class="italic">Замовити в один клік</a>
+						<a href="" class="italic br-b">Замовити в один клік</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-lg-4.png" alt="">
-						<div class="item__title bold">Футболка Sherlock</div>
+						<div class="item__title ">Футболка Sherlock</div>
 						<span>(Шерлок Холмс)</span>
 						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
-						<a href="" class="italic">Замовити в один клік</a>
+						<a href="" class="italic br-b">Замовити в один клік</a>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col product">
 						<img src="images/futbolki/futbolka-lg-1.png" alt="">
-						<div class="item__title bold">Футболка Sherlock</div>
+						<div class="item__title ">Футболка Sherlock</div>
 						<span>(Шерлок Холмс)</span>
 						<div class="prise">180 грн.</div>
 						<a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
-						<a href="#" class="italic">Замовити в один клік</a>
+						<a href="#" class="italic br-b">Замовити в один клік</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-lg-2.png" alt="">
-						<div class="item__title bold">Футболка Sherlock</div>
+						<div class="item__title ">Футболка Sherlock</div>
 						<span>(Шерлок Холмс)</span>
 						<div class="prise">180 грн.</div>
 						<a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
-						<a href="#" class="italic">Замовити в один клік</a>
+						<a href="#" class="italic br-b">Замовити в один клік</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-lg-3.png" alt="">
-						<div class="item__title bold">Футболка Sherlock</div>
+						<div class="item__title ">Футболка Sherlock</div>
 						<span>(Шерлок Холмс)</span>
 						<div class="prise">180 грн.</div>
 						<a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
-						<a href="#" class="italic">Замовити в один клік</a>
+						<a href="#" class="italic br-b">Замовити в один клік</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-lg-4.png" alt="">
-						<div class="item__title bold">Футболка Sherlock</div>
+						<div class="item__title ">Футболка Sherlock</div>
 						<span>(Шерлок Холмс)</span>
 						<div class="prise">180 грн.</div>
 						<a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
-						<a href="#" class="italic">Замовити в один клік</a>
+						<a href="#" class="italic br-b">Замовити в один клік</a>
 					</div>
 				</div>
-				<a href="#" class="italic dots">Більше товарів</a>
+				<div class="tx-a-c">
+					<a href="#" class="more__product italic br-b-dot">Більше товарів</a>
+				</div>
 			</div>
 		</section>
 		<section class="new__items">
 			<div class="container">
-				<h2>Новинки сезону</h2>
+				<h2 class="tx-a-c blue">Новинки сезону</h2>
 				<div class="row new__items__body">
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-4.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="#" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-5.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-w-4.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-4.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-5.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-w-4.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-4.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-5.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-w-4.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-4.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-5.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-w-4.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 					<div class="col product">
 						<img src="images/futbolki/futbolka-md-5.png" alt="">
-						<div class="price">180 грн.</div>
+						<div class="prise">180 грн.</div>
 						<a href="" class="btn"><i class="fas fa-shopping-cart"></i>Купити</a>
 					</div>
 				</div>
@@ -374,7 +383,7 @@
 		</section>
 		<section class="sale__propose">
 			<div class="container">
-				<span class="blue bold">Приведи до нас друга
+				<span class="blue bold tx-a-c">Приведи до нас друга
 				отрімай зніжку</span>
 				<span class="yellow bold">50%</span>
 				<img src="images/couple-2.png" alt="">
@@ -382,24 +391,24 @@
 		</section>
 		<section class="about">
 			<div class="container">
-				<div class="row about__body">
+				<div class="row about__body f-z-14">
 					<div class="col-1-2 news">
 						<div class="news__items">
 							<div class="news__item">
-								<span>Останні новини</span>
-								<a href="#">Усі новини</a>
+								<span class="blue bold">Останні новини</span>
+								<a href="#" class="br-b">Усі новини</a>
 							</div>
 							<div class="news__item">
 								<span class="news__date">12 мая 2014</span>
-								<a href="#" class="news__title">Літні знижки</a>
+								<a href="#" class="news__title  d-b f-z-16">Літні знижки</a>
 								<p class="news__text">
 									Все наши сильные переживания, как физические, так и эмоциональные,
 									случаются в теле. Мы чувствуем их на уровне ощущений.
 								</p>
 							</div>
-							<div class="news__item">
+							<div class="news__item ">
 								<span class="news__date">12 мая 2014</span>
-								<a class="news__title">Літні знижки</a>
+								<a href="#" class="news__title  d-b f-z-16">Виставка сорочок 2014</a>
 								<p class="news__text">
 									Все наши сильные переживания, как физические, так и эмоциональные,
 									случаются в теле. Мы чувствуем их на уровне ощущений.
@@ -410,29 +419,29 @@
 					<div class="col-1-2 feedback">
 						<div class="feedback__items">
 							<div class="feedback__item">
-								<span>Відгуки про нас</span>
-								<a href="#">Усі відгуки</a>
+								<span class="blue bold">Відгуки про нас</span>
+								<a href="#" class="br-b">Усі відгуки</a>
 							</div>
 							<div class="feedback__item">
 								<img src="images/about-as-ph-1.png" alt="" class="user__pic">
 									<div class="feedback__user">
-									<span class="user__town">(м. Ровно)</span>
-									<a href="#" class="user__name">Оксана Маліновская</a>
-									<p class="user__text">
-										Все наши сильные переживания, как физические, так и эмоцио-
-										нальные, случаются в теле. Мы чувствуем их на уровне ощущений.
-									</p>
-								</div>
+										<span class="user__town">(м. Ровно)</span>
+										<a href="#" class="user__name  d-b f-z-16">Оксана Маліновская</a>
+										<p class="user__text">
+											Все наши сильные переживания, как физические, так и эмоцио-
+											нальные, случаются в теле. Мы чувствуем их на уровне ощущений.
+										</p>
+									</div>
 							</div>
 							<div class="feedback__item">
 								<img src="images/about-as-ph-2.png" alt="" class="user__pic">
 									<div class="feedback__user">
-									<span class="user__town">(м. Ровно)</span>
-									<a href="#" class="user__name">Оксана Маліновская</a>
-									<p class="user__text">
-										Все наши сильные переживания, как физические, так и эмоцио-
-										нальные, случаются в теле. Мы чувствуем их на уровне ощущений.
-									</p>
+										<span class="user__town">(м. Ровно)</span>
+										<a href="#" class="user__name  d-b f-z-16">Оксана Маліновская</a>
+										<p class="user__text">
+											Все наши сильные переживания, как физические, так и эмоцио-
+											нальные, случаются в теле. Мы чувствуем их на уровне ощущений.
+										</p>
 								</div>
 							</div>
 						</div>
@@ -444,56 +453,74 @@
 		<footer>
 			<div class="container">
 				<div class="footer__links">
-					<ul>
-						<li><a href="#">Товари</a></li>
-						<li><a href="#">Голова</a></li>
-						<li><a href="#">Наші роботи</a></li>
-						<li><a href="#">Оплата/Доставка</a></li>
-					</ul>
-					<ul>
-						<li><a href="#">Сервіс</a></li>
-						<li><a href="#">Друк оптом</a></li>
-						<li><a href="#">Питання/Відповідь</a></li>
-						<li><a href="#">Відгуки</a></li>
-					</ul>
-					<ul>
-						<li><a href="#">Контакти</a></li>
-						<li><a href="#">Блог</a></li>
-						<li><a href="#">Контакти</a></li>
-						<li><a href="#">Розміри</a></li>
+					<ul >
+						<li class="links__title"><a class="f__product bold" href="#">Товари</a>
+							<ul class="f__products">
+								<li><a href="#" class="br-b">Голова</a></li>
+								<li><a href="#" class="br-b">Наші роботи</a></li>
+								<li><a href="#" class="br-b">Оплата/Доставка</a></li>
+							</ul>
+						</li>
+						<li class="links__title"><a class="f__servise bold" href="#">Сервіс</a>
+							<ul class="f__servises">
+								<li><a href="#" class="br-b">Друк оптом</a></li>
+								<li><a href="#" class="br-b">Питання/Відповідь</a></li>
+								<li><a href="#" class="br-b">Відгуки</a></li>
+							</ul>
+						</li>
+						<li class="links__title"><a class="f__contact bold" href="#">Контакти</a>
+								<ul class="f__contacts">
+									<li><a href="#" class="br-b">Блог</a></li>
+									<li><a href="#" class="br-b">Контакти</a></li>
+									<li><a href="#" class="br-b">Розміри</a></li>
+								</ul>
+						</li>
 					</ul>
 					<div class="contacts">
-						<div class="col">
-							<div class="social__media"></div>
-							<div class="social__media"></div>
-							<div class="social__media"></div>
-						</div>
-						<div class="col">
-							<i class="fab fa-skype"></i><a href="#"> uka.ua</a>
-							<img src="images/icq.png" alt=""><a href="#"> 210-376-022</a>
-							<i class="fas fa-phone"></i><a href="#"> Передзвоніть мені</a>
-							<i class="fas fa-at"></i><a href="#"> info@uka.ua</a>
+						<div class="contacts__links">
+							<div class="col social">
+								<div class="social__media">
+									<a href="#"><i class="fas fa-bold"></i></a>
+								</div>
+								<div class="social__media">
+									<a href=""><i class="fab fa-odnoklassniki"></i></a>
+								</div>
+								<div class="social__media">
+									<a href=""><i class="fab fa-facebook-f"></i></a>
+								</div>
+							</div>
+							<div class="col links ">
+								<div class="link">
+									<i class="fab fa-skype"></i><a href="#" class="br-b"> uka.ua</a>
+								</div>
+								<div class="link">
+									<i class="fab fa-canadian-maple-leaf"></i><a href="#" class="br-b"> 210-376-022</a>
+								</div>
+								<div class="link">
+									<i class="fas fa-phone"></i><a href="#" class="br-b"> Передзвоніть мені</a>
+								</div>
+								<div class="link">
+									<i class="fas fa-at"></i><a href="#" class="br-b"> info@uka.ua</a>
+								</div>
+							</div>
 						</div>
 						<ul class="contact__phones">
-							<li><a href="#" class="contact__phone">(097) 794 01 20</a></li>
-							<li><a href="#" class="contact__phone">(099) 791 92 69</a></li>
-							<li><a href="#" class="contact__phone">(093) 562 92 04</a></li>
+							<li><a href="#" class="contact__phone  border__none">(097) 794 01 20</a></li>
+							<li><a href="#" class="contact__phone  border__none">(099) 791 92 69</a></li>
+							<li><a href="#" class="contact__phone  border__none">(093) 562 92 04</a></li>
 						</ul>
 					</div>
 				</div>
-				<p class="footer__city">
+				<p class="footer__city ">
 					Доставка по украине: Киев Запорожье Белая Церковь Борисполь Винница Днепропетровск Донецк Житомир Ивано-Франковск
 					Кировоград Кременчуг Кривой Рог Луганск Луцк Львов
 					Мариуполь Мелитополь Николаев Одесса Полтава Ровно Севастополь Симферополь Суммы Тернополь Ужгород Харьков Херсон
 					Хмельницкий Черкассы Чернигов Черновцы Ялта
 				</p>
-				<p class="copyright">© 2013 Moдна Майка Всi права захищенi.</p>
 			</div>
 		</footer>
+		<p class="copyright f-z-14">© 2013 Moдна Майка Всi права захищенi.</p>
 	</div>
-	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> -->
+	<script src="js/main.js"></script>
 </body>
 </html>
