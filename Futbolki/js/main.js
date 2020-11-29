@@ -7,9 +7,3 @@ btn.onclick = function () {
 catalog__btn.onclick = function () {
 	nav.classList.toggle('active')
 }
-
-// $(document).ready(function(){
-// 	$("catalog__btn").click(function () {
-// 		$("nav").classList.toggle('active')
-// 	});
-// });
