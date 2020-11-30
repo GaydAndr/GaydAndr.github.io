@@ -168,6 +168,7 @@ footer .links {
 header .container,
 .buttons,
 .main__title,
+.menu__main,
 .menu__catalog,
 .phone-sign,
 .sign__up,
@@ -285,7 +286,7 @@ header:after {
   }
 
   header .social {
-    left: 43%;
+    left: 47%;
     top: 18px;
   }
 }
