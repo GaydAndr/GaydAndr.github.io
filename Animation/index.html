@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    
+	<head>
+        <title>CSS3 Transitions and Animations — Practice</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+    
+    <body>
+        
+        <h2>Concert Map</h2>
+        
+        <div id="concert-map" class='concert-map'>
+            <div class="pin madrid">
+                <span class="town">Madrid</span>
+                <div class="popover">
+                    <p class="place">Wizink Center</p>
+                    <p class="date">October 7, 2017</p>
+                    <a class="button" href="#FORM">Buy tickets</a>
+                </div>
+            </div>
+            
+            <div class="pin turin">
+                <span class="town">Turin</span>
+                <div class="popover">
+                    <p class="place">Pala Alpitour</p>
+                    <p class="date">October 14, 2017</p>
+                    <a class="button" href="#FORM">Buy tickets</a>
+                </div>
+            </div>
+            <div class="pin hamburg">
+                <span class="town">Hamburg</span>
+                <div class="popover">
+                    <p class="place">Barclaycard Arena</p>
+                    <p class="date">November 6, 2017</p>
+                    <a class="button" href="#FORM">Buy tickets</a>
+                </div>
+            </div>
+            <div class="pin krakow">
+                <span class="town">Kraków</span>
+                <div class="popover">
+                    <p class="place">Tauron Arena</p>
+                    <p class="date">November 12, 2017</p>
+                    <a class="button" href="#FORM">Buy tickets</a>
+                </div>
+            </div>
+        </div>
+        <div class="main__form" id="FORM">
+            <form class="form" id="form">
+                <a href="#" class="close-my" id="closeModal">&#10006;</a>
+                <div class="title-my">Buy tickets</div>
+                <div class="message-my">Залиште Ваші дані для оформлення покупки
+                </div>
+                <input class="form-control-my" type="text" name="name" id="name" placeholder="Введіть ваше ім'я" required><br>
+                <input class="form-control-my" type="tel" name="phone" id="phone" placeholder="Контактий номер телефону"
+                    required><br>
+                <input class="form-control-my" type="email" name="email" id="email" placeholder="Ваш e-mail" required><br>
+                <button class="form-button" type="submit">Купити</button>
+                <div class="info-my">Ми не займаємося розсилкою рекламних повідомлень, а також не передаємо контакті дані третім
+                    особам
+                </div>
+            </form>
+        </div>
+    </body>
+    </html>
