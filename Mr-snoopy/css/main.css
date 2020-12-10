@@ -78,6 +78,13 @@ h2 {
   transition: all 0.1s ease;
 }
 
+#menu:after{
+  content:'';
+  display: block
+  height: 100%;
+  width:100%;
+  background-color:red;
+}
 
 .menu{
 overflow: auto;
