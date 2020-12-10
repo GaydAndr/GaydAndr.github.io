@@ -78,6 +78,11 @@ h2 {
   transition: all 0.1s ease;
 }
 
+
+.menu{
+overflow: auto;
+}
+
 .menu>li{
   padding: 25px 0;
 }
@@ -208,7 +213,7 @@ margin-bottom: 6px;
   background: url(../images/Rectangle\ Copy\ 10Ractangle-Copy-10.jpg) 0 0/cover no-repeat ;
 }
 .catalog__item:nth-child(2) {
-  background: url(../images/Rectangle\ Copy\ 12.jpg) no-repeat;
+  background: url(../images/Rectangle\ Copy\ 12.jpg) 0 0/cover no-repeat;
 }
 .catalog__item:nth-child(3) {
   background: url(../images/Rectangle\ Copy\ 14.jpg) no-repeat;
