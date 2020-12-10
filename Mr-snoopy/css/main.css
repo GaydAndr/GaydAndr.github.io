@@ -74,24 +74,25 @@ h2 {
   position: absolute;
   left: -252px;
   padding: 21px 0 26px 15px;
-  overflow: auto;
+  overflow: hidden;
   transition: all 0.1s ease;
 }
 
 #menu:after{
   content:'';
-  display: block
+  display: block;
   height: 100%;
   width:100%;
   background-color:red;
 }
 
 .menu{
-overflow: auto;
+  overflow: auto;
 }
 
 .menu>li{
   padding: 25px 0;
+  position: relative;
 }
 
 
@@ -100,7 +101,7 @@ overflow: auto;
   display: block;
   width: 120%;
   border-bottom: 1px solid #2C2C2C;
-  position: relative;
+  position: absolute;
   bottom: -25px;
   left: -10%;
 }
