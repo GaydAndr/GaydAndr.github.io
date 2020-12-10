@@ -74,7 +74,7 @@ h2 {
   position: absolute;
   left: -252px;
   padding: 21px 0 26px 15px;
-  overflow: hidden;
+  overflow: auto;
   transition: all 0.1s ease;
 }
 
