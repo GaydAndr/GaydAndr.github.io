@@ -16,8 +16,8 @@
 			<div id="topbar">
 				<div class="container">
 					<div class="topbar">
-						<div class="burger">
-							<span></span>
+						<div class="burger" id="burger">
+							<span ></span>
 						</div>
 						<div class="logo">
 							<img src="images/logo.png" alt="">
@@ -31,10 +31,10 @@
 							</div>
 						</div>
 					</div>
-					<nav>
+					<nav id="menu">
 						<ul class="menu">
 							<li><a href="#">Каталог</a>
-								<ul id="menu">
+								<ul class="submenu">
 									<li><a href="#">Повідки</a></li>
 									<li><a href="#">Нашийники</a></li>
 									<li><a href="#">Шлейки</a></li>
@@ -44,7 +44,7 @@
 							<li><a href="#">Про нас</a></li>
 							<li><a href="#">Співпраця</a></li>
 							<li><a href="#">Контакти</a></li>
-							<li><a href="#">Увійти</a></li>
+							<li><a href="#"><img src="images/baseline-person.svg" alt=""> Увійти</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -138,7 +138,7 @@
 						Як визначити розмір
 						нашийника або шлейки?
 					</h2>
-					<div class="arrow_d"></div>
+					<div id="arrow_d" class="arrow_d"></div>
 				</div>
 				<div class="ask-body" id="ask_body">
 					<div class="ask-item">
@@ -288,6 +288,30 @@
 					<input class="form-control-my" type="tel" name="phone" id="phone" placeholder="+38 (099) 276 26 34" required><br>
 					<input class="form-control-my" type="email" name="email" id="email" placeholder="Ваш Email" required><br>
 					<h2>Привід звернення</h2>
+					<div class="checkbox">
+						<label class="custom-checkbox">
+							<input type="checkbox" name="color-1" value="indigo">
+							<span>Хочу зробити замовлення</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label class="custom-checkbox">
+							<input type="checkbox" name="color-2" value="red">
+							<span>Потрібна допомога</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label class="custom-checkbox">
+							<input type="checkbox" name="color-1" value="indigo">
+							<span>Хочу запропонувати співпрацю</span>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label class="custom-checkbox">
+							<input type="checkbox" name="color-2" value="red">
+							<span>Інше</span>
+						</label>
+					</div>
 					<div class="info-my">
 						Натискаючи на кнопку, ви даєте згоду на обробку персональних даних та погоджуєтеся c <a href="#"> політикою конфіденційності</a>
 					</div>
@@ -318,12 +342,12 @@
 					<li>Обмін і повернення</li>
 					<li>Контакти</li>
 				</ul>
-				<div  class="contact__item f__i col-sm-2">
+				<div  class="contact__item  col-sm-2">
 					<a href="https://www.facebook.com/">
-						<img src="images/facebook.svg" alt="">
+						<img src="images/f-facebook.png" alt="">
 					</a>			
 	 				<a href="https://www.instagram.com/">
-						<img src="images/instagram.svg" alt="">
+						<img src="images/f-instagram.png" alt="">
 					</a>
 				</div>
 			</div>
