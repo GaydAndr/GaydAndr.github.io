@@ -205,7 +205,7 @@ margin-bottom: 6px;
 }
 
 .catalog__item:first-child {
-  background: url(../images/Rectangle\ Copy\ 10Ractangle-Copy-10.jpg) no-repeat /cover;
+  background: url(../images/Rectangle\ Copy\ 10Ractangle-Copy-10.jpg) 0 0/cover no-repeat ;
 }
 .catalog__item:nth-child(2) {
   background: url(../images/Rectangle\ Copy\ 12.jpg) no-repeat;
