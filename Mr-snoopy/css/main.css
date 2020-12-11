@@ -69,78 +69,88 @@ h2 {
 #menu {
   display: block;
   min-height: 100vh;
+  height: 100%;
   width: 252px;
   background: #000;
   position: absolute;
-  left: -252px;
+  left: -280px;
+  overflow: auto;
   padding: 21px 0 26px 15px;
-  overflow: hidden;
   transition: all 0.1s ease;
 }
 
-#menu:after{
+#menu li {
+  list-style: none;
+}
+
+/* :after{
   content:'';
   display: block;
   height: 100%;
   width:100%;
   background-color:red;
-}
+  position: absolute;
+  top: 0;
+} */
 
-.menu{
-  overflow: auto;
-}
-
-.menu>li{
+.menu > li {
   padding: 25px 0;
   position: relative;
 }
 
-
-.menu>li::after{
-  content: '';
+.menu > li::after {
+  content: "";
   display: block;
-  width: 120%;
-  border-bottom: 1px solid #2C2C2C;
+  width: 110%;
+  border-bottom: 1px solid #2c2c2c;
   position: absolute;
-  bottom: -25px;
+  bottom: 0px;
   left: -10%;
 }
 
-.menu li:first-child{
+.menu li:first-child {
   padding-top: 0;
-
 }
 
-.menu>li:first-child>a{
-margin-bottom: 6px;
+.menu > li:first-child > a {
+  margin-bottom: 6px;
 }
 
-.menu>li:last-child{
-  position: absolute;
-  bottom: 49px;
+.menu > li:nth-child(4) {
+  margin-bottom: 78px;
 }
 
-.menu img{
+.sign__up {
+  position: fixed;
+  bottom: 0px;
+  left: -300px;
+  width: 240px;
+  padding: 10px;
+  background: #000;
+}
+
+.sign__up img {
   display: block;
 }
 
-.menu>li:last-child a{
+.sign__up a {
   font-size: 15px;
   display: flex;
   align-items: center;
+  color: #ffffff;
 }
 
-.submenu a{
- padding: 6px 0 12px 35px;
- font-size: 18px;
+.submenu a {
+  padding: 6px 0 12px 35px;
+  font-size: 18px;
 }
 
-.menu a{
+.menu a {
   color: #ffffff;
   display: block;
 }
 
-.menu>li>a{
+.menu > li > a {
   font-size: 25px;
   font-weight: 300;
 }
@@ -183,10 +193,6 @@ margin-bottom: 6px;
   bottom: 4px;
 }
 
-
-
-
-
 /* * */
 
 .logo {
@@ -213,21 +219,23 @@ margin-bottom: 6px;
 }
 
 .catalog__item {
+  width: 100%;
   height: 375px;
   padding: 15px;
 }
 
 .catalog__item:first-child {
-  background: url(../images/Rectangle\ Copy\ 10Ractangle-Copy-10.jpg) 0 0/cover no-repeat ;
+  background: url(../images/Rectangle\ Copy\ 10Ractangle-Copy-10.jpg) 0 0 /
+    cover no-repeat;
 }
 .catalog__item:nth-child(2) {
-  background: url(../images/Rectangle\ Copy\ 12.jpg) 0 0/cover no-repeat;
+  background: url(../images/Rectangle\ Copy\ 12.jpg) 0 0 / cover no-repeat;
 }
 .catalog__item:nth-child(3) {
-  background: url(../images/Rectangle\ Copy\ 14.jpg) no-repeat;
+  background: url(../images/Rectangle\ Copy\ 14.jpg) 0 0 / cover no-repeat;
 }
 .catalog__item:nth-child(4) {
-  background: url(../images/Rectangle\ Copy\ 16.jpg) no-repeat;
+  background: url(../images/Rectangle\ Copy\ 16.jpg) 0 0 / cover no-repeat;
 }
 
 .catalog__link {
@@ -310,6 +318,7 @@ margin-bottom: 6px;
 .sets__body {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -317,23 +326,24 @@ margin-bottom: 6px;
   height: 216px;
   margin-bottom: 20px;
   position: relative;
+  max-width: 345px;
 }
 
 .sets__item:last-child {
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .sets__item:nth-child(1) {
-  background: url(../images/Rectangle\ Copy\ 1.jpg) no-repeat;
+  background: url(../images/Rectangle\ Copy\ 1.jpg) 0 0 / cover no-repeat;
 }
 .sets__item:nth-child(2) {
-  background: url(../images/Rectangle\ Copy\ 2.jpg) no-repeat;
+  background: url(../images/Rectangle\ Copy\ 2.jpg) 0 0 / cover no-repeat;
 }
 .sets__item:nth-child(3) {
-  background: url(../images/Rectangle\ Copy\ 3.jpg) no-repeat;
+  background: url(../images/Rectangle\ Copy\ 3.jpg) 0 0 / cover no-repeat;
 }
 .sets__item:nth-child(4) {
-  background: url(../images/Rectangle\ Copy\ 4.jpg) no-repeat;
+  background: url(../images/Rectangle\ Copy\ 4.jpg) 0 0 / cover no-repeat;
 }
 
 .sets__item a {
@@ -560,18 +570,28 @@ margin-bottom: 6px;
 
 .reviews__body {
   margin: 0 auto;
-  width: 270px;
+  max-width: 70%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+ overflow: hidden;
 }
 
 .reviews__body img {
+  width: 100%;
   display: block;
-  margin: 0 auto;
-  padding-bottom: 9px;
+  margin: 0 0 10px;
 }
 
 .reviews__body p {
-  height: 360px;
+  height: auto;
   margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+
+.reviews__text{
+  padding: 10px;
 }
 
 .reviews__name {
@@ -585,12 +605,17 @@ margin-bottom: 6px;
 
 /* ? subscribe */
 
+/* #subscribe .container{
+  max-width: 540px;
+} */
+
 .subscribe__insta {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .subscribe__insta h2 {
-  padding: 21px 0 5px;
+  margin: 21px 0 5px;
 }
 
 .subscribe__insta p {
@@ -601,19 +626,28 @@ margin-bottom: 6px;
 /* * */
 
 .subscribe__grid {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; */
 
-  margin-bottom: 30px;
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 1fr);
+
+  /* grid-auto-columns: 25%; */
+  margin: 0 auto 30px;
 }
 
-.grid__item {
+/* .grid__item {
   display: inline-block;
-}
+} */
 
 .grid__item img {
   display: block;
+  width: 100%;
+  /* width: 312px; */
+
   /* margin: -2px; */
 }
 
@@ -691,7 +725,7 @@ margin-bottom: 6px;
 /* * */
 
 .form h2 {
-  margin: 23px 0 12px ;
+  margin: 23px 0 12px;
 }
 
 .checkbox {
@@ -795,27 +829,26 @@ footer .contact__item {
 
 /* ! ACTIVE */
 
-#burger.active span{
+#burger.active span {
   transform: scale(0);
   transition: all 0.1s ease;
 }
 
-#burger.active:before{
+#burger.active:before {
   transform: rotate(45deg);
   top: 11px;
   width: 24px;
   transition: all 0.1s ease;
 }
-#burger.active::after{
+#burger.active::after {
   transform: rotate(-45deg);
   bottom: 11px;
   width: 24px;
   transition: all 0.1s ease;
 }
 
-#menu.active{
- 
-  left: 0;
+#menu.active {
+  left: 0px;
 }
 
 #ask_body.active {
@@ -825,7 +858,12 @@ footer .contact__item {
   transition: all 0.5s ease-in;
 }
 
-#arrow_d.active{
+#arrow_d.active {
   transition: all 0.5s ease;
   transform: rotateX(180deg);
+}
+
+#sign__up.active {
+  left: 0;
+  transition: all 0.1s ease;
 }
