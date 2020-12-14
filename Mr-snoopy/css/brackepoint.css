@@ -88,6 +88,16 @@
     font-size: 35px;
   }
 
+.catalog__link{
+opacity: 0;
+transition: .4s else-uot;
+} 
+
+.catalog__link:hover{
+opacity:1;
+transition: .4s else;
+}
+
   .sets__item {
     max-width: 610px;
     height: 380px;
