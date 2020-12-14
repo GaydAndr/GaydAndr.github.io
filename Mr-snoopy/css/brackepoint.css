@@ -123,9 +123,7 @@
     margin: 0 24px 0 0;
   }
 
-  .reviews__title {
-    visibility: hidden;
-  }
+ 
 
   #subscribe .btn {
     max-width: 226px;
@@ -202,6 +200,10 @@
 }
 
 @media (min-width: 960px) {
+   .reviews__title {
+    visibility: hidden;
+  }
+  
   .reviews__body::before,
   .reviews__body::after {
     content: "";
