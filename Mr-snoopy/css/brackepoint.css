@@ -203,12 +203,17 @@
 
 .catalog__link{
 opacity: 0;
+visibility: hidden;
+transform: rotateX(90deg);
 transition: all 0.5s ease;
 } 
 
 .catalog__link:hover{
 opacity:1;
+visibility: visible;
 transition: all 0.1s ease 0.2s;
+transition-delay: 0s; 
+transform: rotateY(0deg);
 }
 
    .reviews__title {
