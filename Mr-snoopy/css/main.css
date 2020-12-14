@@ -21,6 +21,7 @@ a {
 
 h2 {
   font-size: 25px;
+  font-weight: normal;
 }
 
 /* ! GRID */
@@ -251,6 +252,10 @@ h2 {
 
 /* ? popular__products */
 
+#popular__products h2 {
+  margin-bottom: 15px;
+}
+
 #popular__products .container {
   padding: 0;
 }
@@ -281,7 +286,7 @@ h2 {
 
 .product__item {
   min-width: 255px;
-  min-height: 315px;
+  height: 315px;
   text-align: center;
   font-size: 13px;
   position: relative;
@@ -309,6 +314,10 @@ h2 {
 }
 
 /* ? Sets */
+
+#sets h2 {
+  margin-bottom: 15px;
+}
 
 .info {
   position: relative;
@@ -524,7 +533,7 @@ h2 {
   position: relative;
 }
 
-#reviews .container::after {
+/* #reviews .container::after {
   content: "";
   display: block;
   width: 92%;
@@ -532,7 +541,7 @@ h2 {
   border-top: 1px solid #dddcff;
   position: absolute;
   bottom: -31px;
-}
+} */
 
 .reviews__title {
   display: flex;
@@ -572,7 +581,6 @@ h2 {
   margin: 0 auto;
   max-width: 70%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
- overflow: hidden;
 }
 
 .reviews__body img {
@@ -588,9 +596,7 @@ h2 {
   line-height: 30px;
 }
 
-
-
-.reviews__text{
+.reviews__text {
   padding: 10px;
 }
 
@@ -660,7 +666,11 @@ h2 {
 
 .contact__body {
   line-height: 25px;
-  margin-top: 7px;
+  /* margin-top: 7px; */
+}
+
+.contact__body h2 {
+  margin-bottom: 15px;
 }
 
 .contact__body a {
@@ -695,6 +705,7 @@ h2 {
 .message-my {
   font-size: 1.4em;
 }
+
 .form-control-my {
   height: 54px;
   width: 100%;
@@ -809,6 +820,12 @@ footer li {
 footer .logo {
   order: 1;
 }
+
+footer .logo img {
+  width: 80%;
+  max-width: 66px;
+}
+
 footer .f__c {
   font-weight: 300;
   order: 3;
