@@ -10,6 +10,11 @@
     grid-template-columns: repeat(2, 50%);
   }
 
+  .sets__body {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
   .sets__item {
     max-width: 410px;
     height: 300px;
@@ -62,14 +67,46 @@
 }
 
 @media (min-width: 767px) {
-	
-.container{
-    max-width: 1249px;
+  .col-md-2 {
+    width: calc(100% / 12 * 2 - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
   }
-	
+
+  .col-lg-1-2 {
+    width: calc(100% / 2 * 1 - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .container {
+    max-width: 1249px;
+    padding: 0 30px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
   .sets__item {
     max-width: 610px;
     height: 380px;
+  }
+
+  .ask-item .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .about__us__body {
+    display: flex;
+    justify-content: space-around;
+    padding: 94px 0;
+  }
+
+  .about__us__item {
+    padding: 0 20px;
+    width: 50%;
   }
 
   .reviews__body {
@@ -78,6 +115,7 @@
     align-items: center;
     height: 380px;
     max-width: 821px;
+    position: relative;
   }
 
   .reviews__body img {
@@ -85,8 +123,100 @@
     margin: 0 24px 0 0;
   }
 
-.btn{
-	width: 226px;
-	margin: 0 auto 30px;
+  .reviews__title {
+    visibility: hidden;
+  }
+
+  #subscribe .btn {
+    max-width: 226px;
+    margin: 0 auto 60px;
+  }
+
+  #contact {
+  }
+
+  #contact .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    /* margin-left: -10px;
+    margin-right: -10px; */
+  }
+
+  .btn-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px -5px 0 -5px;
+  }
+
+  .form-button {
+    order: 0;
+    margin: 0;
+  }
+
+  .info-my {
+    order: 1;
+    margin: 0;
+  }
+
+  footer {
+    overflow: hidden;
+  }
+
+  footer .container {
+    /* margin-left: -5px;
+    margin-right: -5px; */
+  }
+
+  footer li {
+    font-size: 12px;
+  }
+
+  footer .logo img {
+    max-width: 134px;
+  }
+
+  footer .f__c {
+    font-weight: 300;
+    order: 2;
+  }
+  footer .work__schedule {
+    order: 3;
+  }
+  footer .f__catalog {
+    order: 4;
+  }
+  footer .f__service {
+    order: 5;
+  }
+  footer .contact__item {
+    order: 6;
+    text-align: right;
+    align-self: flex-end;
+  }
+
+  .btn {
+    max-width: 226px;
+  }
 }
+
+@media (min-width: 960px) {
+  .reviews__body::before,
+  .reviews__body::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+  }
+
+  .reviews__body::before {
+    background: url(../images/arrow_l.svg);
+    left: -60px;
+  }
+  .reviews__body::after {
+    background: url(../images/arrow_r.svg);
+    right: -60px;
+  }
 }
