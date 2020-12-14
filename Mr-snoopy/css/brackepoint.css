@@ -90,12 +90,12 @@
 
 .catalog__link{
 opacity: 0;
-transition: .4s else-uot;
+transition: all 0.5s ease;
 } 
 
 .catalog__link:hover{
 opacity:1;
-transition: .4s else;
+transition: all 0.1s ease 0.2s;
 }
 
   .sets__item {
