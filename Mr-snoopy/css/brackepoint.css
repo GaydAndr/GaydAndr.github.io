@@ -88,16 +88,6 @@
     font-size: 35px;
   }
 
-.catalog__link{
-opacity: 0;
-transition: all 0.5s ease;
-} 
-
-.catalog__link:hover{
-opacity:1;
-transition: all 0.1s ease 0.2s;
-}
-
   .sets__item {
     max-width: 610px;
     height: 380px;
@@ -210,6 +200,17 @@ transition: all 0.1s ease 0.2s;
 }
 
 @media (min-width: 960px) {
+
+.catalog__link{
+opacity: 0;
+transition: all 0.5s ease;
+} 
+
+.catalog__link:hover{
+opacity:1;
+transition: all 0.1s ease 0.2s;
+}
+
    .reviews__title {
     visibility: hidden;
   }
