@@ -213,7 +213,7 @@ opacity:1;
 visibility: visible;
 transition: all 0.1s ease 0.2s;
 transition-delay: 0s; 
-transform: rotateY(0deg);
+transform: rotateX(0deg);
 }
 
    .reviews__title {
