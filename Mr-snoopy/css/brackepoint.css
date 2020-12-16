@@ -194,7 +194,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 970px) {
   .catalog__body{
     grid-template-areas: 'c-left c-center c-right-top'
                          'c-left c-center c-right-bottom';
