@@ -13,7 +13,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  min-width: 380px;
+  min-width: 375px;
 }
 a {
   text-decoration: none;
