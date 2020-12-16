@@ -1,21 +1,3 @@
-let helloMsg = " Hello from JS";
-
-function printString(string) {
-	document.write(string.bold());
-}
-
-function printHello() {
-	printString(helloMsg);
-}
-
-printHello();
-
-let apples = prompt("Apples?");
-let oranges = prompt("Oranges?");
-let fruits = +apples + +oranges;
-document.write("Fruits: " + fruits);
-
-
 let first = 10;
 let second = 20;
 let result = +first + +second;
@@ -29,7 +11,7 @@ alert("Hello, " + user_name + "! You are " + age + " years old.")
 document.write("Ім'я: " + user_name);
 document.write("Вік: " + age);
 
-*
+
 
 let number_1 = prompt("Вкажіть перше число: ");
 let number_2 = prompt("Вкажіть друге число: ");
