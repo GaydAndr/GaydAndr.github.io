@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+body .container {
+  margin: 0 auto;
+  padding: 0 15px;
+  min-width: 310px;
+}
+body a {
+  text-decoration: none;
+}
+body h1,
+body h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+body img {
+  width: 100%;
+  display: block;
+}
+
+.burger {
+  width: 25px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.burger::before, .burger::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 4px;
+  background: #606061;
+  border-radius: 30px;
+  position: absolute;
+  transition: all 0.1s ease;
+}
+.burger:before {
+  top: 4px;
+}
+.burger::after {
+  bottom: 4px;
+}
+.burger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #606061;
+  border-radius: 30px;
+  transition: all 0.1s ease;
+}
+
+#burger.active span {
+  transform: scale(0);
+  transition: all 0.1s ease;
+}
+
+#burger.active:before {
+  transform: rotate(45deg);
+  top: 12px;
+  width: 30px;
+  transition: all 0.1s ease;
+}
+
+#burger.active::after {
+  transform: rotate(-45deg);
+  bottom: 12px;
+  width: 30px;
+  transition: all 0.1s ease;
+}
+
+#menu {
+  display: block;
+  min-height: 100vh;
+  height: 100%;
+  width: 252px;
+  background: #000;
+  position: absolute;
+  left: -280px;
+  overflow: auto;
+  padding: 21px 0 26px 15px;
+  transition: all 0.1s ease;
+}
+#menu li {
+  list-style: none;
+}
+
+#menu.active {
+  left: 0px;
+}
+
+header {
+  background: #eff0f2 url(../images/Glass.png) 70vw 70vh/70px 70px no-repeat;
+  height: 100vh;
+}
+header .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .container .topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 15px;
+  position: fixed;
+  top: 0;
+  background: #eff0f2;
+}
+header .container .topbar .logo a {
+  display: block;
+  width: 60%;
+}
+header .container .main-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+header .container .main-title h1 {
+  color: #505050;
+  font-size: 25px;
+  line-height: 2rem;
+  font-weight: 700;
+}
+header .container .main-title h1 span {
+  background: rgba(112, 245, 234, 0.5);
+  padding: 0 5px;
+}
+header .container .header-btn a {
+  border: 2px solid #777879;
+  border-radius: 3px;
+  padding: 15px 47px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 3px;
+  color: #181919;
+}
+header .container .header-btn a:hover {
+  background-color: #70f5ea;
+  color: #181919;
+}
+
+/*# sourceMappingURL=main.css.map */

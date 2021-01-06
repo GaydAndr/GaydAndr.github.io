@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopno</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" type="images/x-icon" />
   </head>
   <body>
     <header>
@@ -14,11 +23,11 @@
               <img src="images/SHOPNO-logo.png" alt="" />
             </a>
           </div>
-          <div class="menu">
-            <div class="burger">
+          <div class="burger-menu">
+            <div class="burger" id="burger">
               <span></span>
             </div>
-            <nav>
+            <nav id="menu">
               <ul>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Featured works</a></li>
@@ -33,12 +42,12 @@
         </div>
         <div class="main-title">
           <h1>
-            Say Hello to SHOPNO! <br />
-            Agency CORPORATE SHOPNO Theme
+            Say Hello to <span> SHOPNO! </span><br />
+            <span>Agency</span> CORPORATE SHOPNO Theme
           </h1>
         </div>
         <div class="header-btn">
-          <span>Contact us</span>
+          <a href="#">Contact us</a>
         </div>
       </div>
     </header>
@@ -276,5 +285,7 @@
     <footer id="">
       <div class="container"></div>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

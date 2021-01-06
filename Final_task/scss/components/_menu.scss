@@ -1,0 +1,20 @@
+#menu {
+  display: block;
+  min-height: 100vh;
+  height: 100%;
+  width: 252px;
+  background: #000;
+  position: absolute;
+  left: -280px;
+  overflow: auto;
+  padding: 21px 0 26px 15px;
+  transition: all 0.1s ease;
+
+  li {
+    list-style: none;
+  }
+}
+
+#menu.active {
+  left: 0px;
+}
