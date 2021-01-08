@@ -1,0 +1,27 @@
+#about-us {
+  .about-us__body {
+    display: flex;
+    flex-wrap: wrap;
+
+    .slider {
+      width: 100%;
+      height: 300px;
+      background: $main-bg-c;
+      margin: 0 0 20px;
+    }
+    .about-us__text {
+      h4 {
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        color: #3e3f3f;
+        margin: 10px 0;
+        font-size: 1.2rem;
+      }
+      p {
+        margin: 15px 0;
+        color: $text-color;
+        font-size: 0.75em;
+      }
+    }
+  }
+}

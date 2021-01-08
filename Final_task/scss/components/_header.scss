@@ -3,13 +3,13 @@
 @import "menu";
 
 header {
-  background: #eff0f2 url(../images/Glass.png) 70vw 70vh / 70px 70px no-repeat;
+  background: #eff0f2 url(../images/Glass.png) 70vw 80vh / 70px 70px no-repeat;
   height: 100vh;
   .container {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     .topbar {
       display: flex;
@@ -19,7 +19,7 @@ header {
       padding: 12px 15px;
       position: fixed;
       top: 0;
-      background: #eff0f2;
+      background: $main-bg-c;
       .logo {
         a {
           display: block;
@@ -29,7 +29,7 @@ header {
     }
     .main-title {
       text-align: center;
-      margin-bottom: 50px;
+      // margin-bottom: 50px;
       h1 {
         color: $title-color;
         font-size: $title-fz-mb;
@@ -42,6 +42,7 @@ header {
       }
     }
     .header-btn {
+      margin-bottom: 50px;
       a {
         border: 2px solid #777879;
         border-radius: 3px;

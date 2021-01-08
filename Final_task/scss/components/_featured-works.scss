@@ -1,0 +1,10 @@
+.featured-works__body {
+  display: grid;
+  grid-template-columns: 1fr 50%;
+  grid-template-rows: repeat(2, 1fr);
+
+  .featured-works__item {
+    width: 50%;
+    height: 50px;
+  }
+}
