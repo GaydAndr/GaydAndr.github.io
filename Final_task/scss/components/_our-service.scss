@@ -1,0 +1,105 @@
+.our-service__body,
+.small-team__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  // grid-auto-rows: 1fr;
+  grid-gap: $grid-gap;
+
+  .our-service__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 35px;
+
+    h4,
+    p,
+    a {
+      color: $our-service-text;
+      position: relative;
+      z-index: 2;
+      transition: all 0.5s ease 0.2s;
+    }
+    h4 {
+      margin: 0 0 30px;
+    }
+    p {
+      font-size: $text-fz;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+    a {
+      position: absolute;
+      bottom: 28px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: 1;
+      transition: all 0.5s ease 0.2s;
+    }
+
+    &:hover {
+      h4,
+      p,
+      a {
+        color: #000;
+      }
+      a {
+        transform: rotateX(90deg);
+        visibility: hidden;
+      }
+      &::after {
+        background: #71f5ea;
+      }
+    }
+    &:nth-child(1) {
+      background: url(../images/our-s_img-1.png) 0 0 / cover no-repeat;
+    }
+    &:nth-child(2) {
+      background: url(../images/our-s_img-2.png) 0 0 / cover no-repeat;
+    }
+    &:nth-child(3) {
+      background: url(../images/our-s_img-3.png) 0 0 / cover no-repeat;
+    }
+    &:nth-child(4) {
+      background: url(../images/our-s_img-4.png) 0 0 / cover no-repeat;
+    }
+    &:nth-child(5) {
+      background: url(../images/our-s_img-5.png) 0 0 / cover no-repeat;
+    }
+    &:nth-child(6) {
+      background: url(../images/our-s_img-6.png) 0 0 / cover no-repeat;
+    }
+  }
+}
+
+@media (min-width: 476px) {
+  .our-service__body {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    .our-service__item:nth-child(1),
+    .our-service__item:nth-child(3) {
+      grid-column: 1 / 8;
+    }
+    .our-service__item:nth-child(2),
+    .our-service__item:nth-child(4) {
+      grid-column: 8 / 13;
+    }
+    .our-service__item:nth-child(5) {
+      grid-column: 1 / span 5;
+    }
+    .our-service__item:nth-child(6) {
+      grid-column: 6 / 13;
+    }
+  }
+}

@@ -11,8 +11,6 @@
     }
     .about-us__text {
       h4 {
-        font-family: "Merriweather", serif;
-        font-weight: 700;
         color: #3e3f3f;
         margin: 10px 0;
         font-size: 1.2rem;
@@ -20,8 +18,19 @@
       p {
         margin: 15px 0;
         color: $text-color;
-        font-size: 0.75em;
+        font-size: $text-fz;
       }
     }
   }
 }
+
+// .slider {
+//   img {
+//     width: 100vw;
+//     position: relative;
+//     left: 50%;
+//     right: 50%;
+//     margin-left: -50vw;
+//     margin-right: -50vw;
+//   }
+// }

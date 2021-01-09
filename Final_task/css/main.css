@@ -20,6 +20,10 @@ body h2,
 body h4 {
   text-transform: uppercase;
 }
+body h4 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
 body img {
   width: 100%;
   display: block;
@@ -31,11 +35,11 @@ body img {
 }
 .section-title h2 {
   margin-bottom: 5px;
-  font-size: 25px;
+  font-size: calc(18px + 2vw);
 }
 .section-title p {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: calc(10px + 1vw);
   font-family: "Merriweather", serif;
   font-weight: 300;
   color: #848585;
@@ -128,10 +132,14 @@ header .container .topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding: 12px 15px;
+  width: 100vw;
+  padding: 10px 15px;
   position: fixed;
   top: 0;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   background: #eff0f2;
 }
 header .container .topbar .logo a {
@@ -180,8 +188,6 @@ header .container .header-btn a:hover {
   margin: 0 0 20px;
 }
 #about-us .about-us__body .about-us__text h4 {
-  font-family: "Merriweather", serif;
-  font-weight: 700;
   color: #3e3f3f;
   margin: 10px 0;
   font-size: 1.2rem;
@@ -189,17 +195,131 @@ header .container .header-btn a:hover {
 #about-us .about-us__body .about-us__text p {
   margin: 15px 0;
   color: #404141;
-  font-size: 0.75em;
+  font-size: 14px;
 }
 
 .featured-works__body {
   display: grid;
-  grid-template-columns: 1fr 50%;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
 }
-.featured-works__body .featured-works__item {
-  width: 50%;
-  height: 50px;
+.our-service__body,
+.small-team__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+.our-service__body .our-service__item,
+.small-team__body .our-service__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 35px;
+}
+.our-service__body .our-service__item h4,
+.our-service__body .our-service__item p,
+.our-service__body .our-service__item a,
+.small-team__body .our-service__item h4,
+.small-team__body .our-service__item p,
+.small-team__body .our-service__item a {
+  color: #f7f7f7;
+  position: relative;
+  z-index: 2;
+  transition: all 0.5s ease 0.2s;
+}
+.our-service__body .our-service__item h4,
+.small-team__body .our-service__item h4 {
+  margin: 0 0 30px;
+}
+.our-service__body .our-service__item p,
+.small-team__body .our-service__item p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+.our-service__body .our-service__item a,
+.small-team__body .our-service__item a {
+  position: absolute;
+  bottom: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.our-service__body .our-service__item::after,
+.small-team__body .our-service__item::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+  transition: all 0.5s ease 0.2s;
+}
+.our-service__body .our-service__item:hover h4,
+.our-service__body .our-service__item:hover p,
+.our-service__body .our-service__item:hover a,
+.small-team__body .our-service__item:hover h4,
+.small-team__body .our-service__item:hover p,
+.small-team__body .our-service__item:hover a {
+  color: #000;
+}
+.our-service__body .our-service__item:hover a,
+.small-team__body .our-service__item:hover a {
+  transform: rotateX(90deg);
+  visibility: hidden;
+}
+.our-service__body .our-service__item:hover::after,
+.small-team__body .our-service__item:hover::after {
+  background: #71f5ea;
+}
+.our-service__body .our-service__item:nth-child(1),
+.small-team__body .our-service__item:nth-child(1) {
+  background: url(../images/our-s_img-1.png) 0 0/cover no-repeat;
+}
+.our-service__body .our-service__item:nth-child(2),
+.small-team__body .our-service__item:nth-child(2) {
+  background: url(../images/our-s_img-2.png) 0 0/cover no-repeat;
+}
+.our-service__body .our-service__item:nth-child(3),
+.small-team__body .our-service__item:nth-child(3) {
+  background: url(../images/our-s_img-3.png) 0 0/cover no-repeat;
+}
+.our-service__body .our-service__item:nth-child(4),
+.small-team__body .our-service__item:nth-child(4) {
+  background: url(../images/our-s_img-4.png) 0 0/cover no-repeat;
+}
+.our-service__body .our-service__item:nth-child(5),
+.small-team__body .our-service__item:nth-child(5) {
+  background: url(../images/our-s_img-5.png) 0 0/cover no-repeat;
+}
+.our-service__body .our-service__item:nth-child(6),
+.small-team__body .our-service__item:nth-child(6) {
+  background: url(../images/our-s_img-6.png) 0 0/cover no-repeat;
+}
+
+@media (min-width: 476px) {
+  .our-service__body {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .our-service__body .our-service__item:nth-child(1),
+.our-service__body .our-service__item:nth-child(3) {
+    grid-column: 1/8;
+  }
+  .our-service__body .our-service__item:nth-child(2),
+.our-service__body .our-service__item:nth-child(4) {
+    grid-column: 8/13;
+  }
+  .our-service__body .our-service__item:nth-child(5) {
+    grid-column: 1/span 5;
+  }
+  .our-service__body .our-service__item:nth-child(6) {
+    grid-column: 6/13;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

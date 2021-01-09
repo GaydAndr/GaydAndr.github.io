@@ -15,10 +15,14 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
-      padding: 12px 15px;
+      width: 100vw;
+      padding: 10px 15px;
       position: fixed;
       top: 0;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
       background: $main-bg-c;
       .logo {
         a {
