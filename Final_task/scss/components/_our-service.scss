@@ -1,61 +1,97 @@
-.our-service__body,
-.small-team__body {
+.our-service__body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
-  // grid-auto-rows: 1fr;
   grid-gap: $grid-gap;
 
   .our-service__item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 30px 35px;
+    overflow: hidden;
+    height: 300px;
 
-    h4,
-    p,
-    a {
-      color: $our-service-text;
+    .front,
+    .back {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 35px;
       position: relative;
-      z-index: 2;
-      transition: all 0.5s ease 0.2s;
-    }
-    h4 {
-      margin: 0 0 30px;
-    }
-    p {
-      font-size: $text-fz;
-      margin-bottom: 30px;
-      font-weight: 300;
-    }
-    a {
-      position: absolute;
-      bottom: 28px;
-      text-transform: uppercase;
-      font-weight: 300;
-    }
-    &::after {
-      content: "";
       height: 100%;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.65);
-      z-index: 1;
-      transition: all 0.5s ease 0.2s;
-    }
 
-    &:hover {
       h4,
       p,
       a {
-        color: #000;
+        color: $our-service-text;
+        position: relative;
+        z-index: 2;
+        transition: all 0.5s ease 0.2s;
+      }
+      h4 {
+        margin: 0 0 30px;
+      }
+      p {
+        font-size: $text-fz;
+        margin-bottom: 30px;
+        font-weight: 300;
       }
       a {
-        transform: rotateX(90deg);
-        visibility: hidden;
+        text-transform: uppercase;
+        font-weight: 300;
+        position: absolute;
+        bottom: 28px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          transform-origin: left;
+        }
+        &::before {
+          border-bottom: 2px solid $our-service-text;
+          transform: scale3d(0, 1, 1);
+        }
+        &:hover::before {
+          transform: scale3d(1, 1, 1);
+          transition: transform 0.5s;
+        }
+        img {
+          width: auto;
+          display: inline-block;
+        }
+      }
+      &::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        // transition: all 0.5s ease 0.2s;
+      }
+    }
+    .front {
+      justify-content: center;
+      width: 100%;
+      top: 0px;
+      // top: -100%;
+
+      &::after {
+        background: rgba(0, 0, 0, 0.65);
+      }
+      .up {
+        top: -100%;
+      }
+    }
+    .back {
+      // top: -100%;
+      h4,
+      p {
+        color: #000;
+        position: relative;
+        z-index: 2;
+        transition: all 0.5s ease 0.2s;
       }
       &::after {
         background: #71f5ea;

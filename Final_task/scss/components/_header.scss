@@ -24,6 +24,7 @@ header {
       margin-left: -50vw;
       margin-right: -50vw;
       background: $main-bg-c;
+      z-index: 999;
       .logo {
         a {
           display: block;
