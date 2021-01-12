@@ -1,0 +1,63 @@
+#form-info {
+  background: url(../images/bottom-bg.png) 0 0 / cover no-repeat;
+
+  .form-info {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: $grid-gap;
+    justify-items: stretch;
+
+    .form,
+    .info-map {
+      background: rgba(#4a5862, 0.8);
+      padding: 15px;
+    }
+    .form {
+      .form-control {
+        width: 100%;
+        padding: 15px 0;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $form-text;
+        color: $form-text;
+        &::-webkit-input-placeholder {
+          color: $form-text;
+        }
+        &::-moz-placeholder {
+          color: $form-text;
+        } /* Firefox 19+ */
+        &:-moz-placeholder {
+          color: $form-text;
+        } /* Firefox 18- */
+        &:-ms-input-placeholder {
+          color: $form-text;
+        }
+      }
+      .form-button {
+        width: 100%;
+        border: none;
+        border-radius: 2px;
+        text-transform: uppercase;
+        font-weight: 700;
+        background: $color-spry;
+        color: $text-color;
+        padding: 15px 0;
+        margin-top: 15px;
+      }
+    }
+    .info-map {
+      .info {
+        ul {
+          list-style: none;
+        }
+      }
+      .map {
+        iframe {
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
+}

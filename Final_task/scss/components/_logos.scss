@@ -1,0 +1,17 @@
+.logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: $grid-gap;
+  justify-content: center;
+
+  .logos__item {
+    align-self: center;
+    a {
+      img {
+        max-width: 125px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

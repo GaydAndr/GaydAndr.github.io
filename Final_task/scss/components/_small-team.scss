@@ -19,6 +19,26 @@
       visibility: hidden;
       transition: all 0.9s ease;
 
+      h4 {
+        font-weight: 900;
+        span {
+          text-transform: none;
+          font-size: 14px;
+          font-style: italic;
+          color: #757776;
+        }
+      }
+      p {
+        margin: 1em 0 1.5em;
+      }
+      .social {
+        a {
+          margin-right: 0.8em;
+          color: #214946;
+          font-size: 13px;
+        }
+      }
+
       &::before {
         content: "";
         height: 20px;
