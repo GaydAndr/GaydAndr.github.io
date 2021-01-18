@@ -28,7 +28,6 @@
       .text-container {
         overflow: hidden;
         p {
-          height: 140px;
           font-size: $text-fz;
           margin-bottom: 30px;
           font-weight: 300;
@@ -81,9 +80,6 @@
       &::after {
         background: rgba(0, 0, 0, 0.65);
       }
-      .up {
-        top: -100%;
-      }
     }
     .back {
       // top: -100%;
@@ -93,6 +89,9 @@
         position: relative;
         z-index: 2;
         transition: all 0.5s ease 0.2s;
+        p {
+          height: 140px;
+        }
       }
       &::after {
         background: #71f5ea;
@@ -125,8 +124,10 @@
       .front,
       .back {
         .text-container {
-          font-family: 'Raleway', sans-serif;
-          font-size: 16px;
+          p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+          }
         }
         a {
           font-size: 18px;

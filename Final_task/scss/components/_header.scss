@@ -24,5 +24,18 @@ header {
 }
 
 @media (min-width: 720px) {
-  header {}
+  header {
+    height: 86px;
+    background: rgba($main-bg-c, .8);
+    .container {
+      .topbar {
+        padding: 20px 0;
+        .logo {
+          a {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
