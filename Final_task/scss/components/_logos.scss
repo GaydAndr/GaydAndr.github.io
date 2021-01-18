@@ -2,9 +2,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: $grid-gap;
+  grid-gap: $grid-gap-mb;
   justify-content: center;
-
   .logos__item {
     align-self: center;
     a {
@@ -15,6 +14,7 @@
     }
   }
 }
+
 @media (min-width: 720px) {
   .logos {
     grid-template-columns: repeat(12, 1fr);

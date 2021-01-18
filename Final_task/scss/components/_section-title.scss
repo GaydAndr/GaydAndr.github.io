@@ -3,13 +3,26 @@
   margin: 50px 0 40px;
   h2 {
     margin-bottom: 5px;
-    font-size: $h2-fz-mb;
+    font-size: 25px;
+    // font-size: calc(18px + 2vw);
   }
   p {
     text-transform: uppercase;
-    font-size: calc(10px + 1vw);
+    font-size: 14px;
+    // font-size: calc(10px + 1vw);
     font-family: "Merriweather", serif;
     font-weight: 300;
     color: #848585;
+  }
+}
+
+@media (min-width: 566px) {
+  .section-title {
+    h2 {
+      font-size: 38px;
+    }
+    p {
+      font-size: 17px;
+    }
   }
 }

@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-
+  z-index: 10;
   &::before,
   &::after {
     content: "";
@@ -17,15 +17,12 @@
     position: absolute;
     transition: all 0.1s ease;
   }
-
   &:before {
     top: 4px;
   }
-
   &::after {
     bottom: 4px;
   }
-
   span {
     display: block;
     width: 30px;
@@ -47,6 +44,7 @@
   width: 30px;
   transition: all 0.1s ease;
 }
+
 #burger.active::after {
   transform: rotate(-45deg);
   bottom: 12px;

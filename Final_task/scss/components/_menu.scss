@@ -1,20 +1,31 @@
 #menu {
   display: block;
   min-height: 100vh;
-  height: 100%;
-  width: 252px;
-  background: #000;
+  height: 100vh;
+  width: 100vw;
+  background: $main-bg-c;
   position: absolute;
-  left: -280px;
+  top: -200vh;
+  left: 0;
+  transition: all 0.5s ease;
   overflow: auto;
-  padding: 21px 0 26px 15px;
-  transition: all 0.1s ease;
-
-  li {
-    list-style: none;
+  ul {
+    padding: 30px;
+    li {
+      margin: 25px 0;
+      border-bottom: 1px solid $text-color;
+      text-align: center;
+      a {
+        display: block;
+        width: 100%;
+        color: $text-color;
+        font-size: 25px;
+        font-weight: 500;
+      }
+    }
   }
 }
 
 #menu.active {
-  left: 0px;
+  top: 0vh;
 }
