@@ -1,0 +1,28 @@
+@import "burger";
+@import "menu";
+header {
+  height: 48px;
+  width: 100%;
+  background: $main-bg-c;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  .container {
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      .logo {
+        a {
+          display: block;
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  header {}
+}

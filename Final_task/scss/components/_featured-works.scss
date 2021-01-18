@@ -1,0 +1,14 @@
+.featured-works__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: $grid-gap-mb;
+  .featured-works__item {}
+}
+
+@media (min-width: 720px) {
+  .featured-works__body {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}

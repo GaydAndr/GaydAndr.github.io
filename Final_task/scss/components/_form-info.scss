@@ -1,0 +1,133 @@
+#form-info {
+  background: url(../images/bottom-bg.png) 50% 0 / cover no-repeat;
+  .form-info {
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: $grid-gap-mb;
+    .form,
+    .info-map {
+      display: flex;
+      flex-direction: column;
+      background: rgba(#0b2231, 0.6);
+      padding: 15px;
+      height: 460px;
+    }
+    .form {
+      justify-content: space-between;
+      .form-control {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        width: 100%;
+        padding: 10px 0;
+        background: none;
+        border: none;
+        border-bottom: 1px solid $form-text;
+        color: $form-text;
+        &::-webkit-input-placeholder {
+          color: $form-text;
+        }
+        &::-moz-placeholder {
+          color: $form-text;
+        }
+        /* Firefox 19+ */
+        &:-moz-placeholder {
+          color: $form-text;
+        }
+        /* Firefox 18- */
+        &:-ms-input-placeholder {
+          color: $form-text;
+        }
+      }
+      textarea {
+        flex: 3;
+        // height: 50%;
+        margin-bottom: 40px;
+      }
+      .form-button {
+        width: 100%;
+        height: 53px;
+        border: none;
+        border-radius: 2px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        background: $color-spry;
+        color: $text-color;
+        align-self: center;
+      }
+    }
+    .info-map {
+      .info {
+        line-height: 20px;
+        padding: 26px 0 27px;
+        ul {
+          li {
+            a {
+              color: $form-text;
+              font-size: 15px;
+            }
+          }
+          &:first-child {
+            margin-bottom: 33px; //37px
+          }
+        }
+      }
+      .map {
+        height: 224px;
+        iframe {
+          height: 224px;
+          width: 100%;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 566px) {
+  #form-info {
+    .form-info {
+      .form {
+        .form-button {
+          width: 246px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  #form-info {
+    .form-info {
+      padding: 123px 0;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 26px;
+      .form {
+        padding: 38px 30px;
+      }
+      .info-map {
+        padding: 0;
+        .info {
+          padding: 38px 30px 27px;
+        }
+        .map {
+          padding: 0 22px 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #form-info {
+    .form-info {
+      .form {
+        .form-button {
+          align-self: start;
+        }
+      }
+    }
+  }
+}
