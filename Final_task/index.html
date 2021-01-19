@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="top">
     <div class="container">
       <div class="topbar">
         <div class="logo">
@@ -37,7 +37,7 @@
               <li class="menuBtn"><a href="#" onclick="slowScroll('#our-service')">Our services</a></li>
               <li class="menuBtn"><a href="#" onclick="slowScroll('#small-team')">Small team</a></li>
               <li class="menuBtn"><a href="#" onclick="slowScroll('#what-they-says')">What they says</a></li>
-              <li class="menuBtn"><a href="#" onclick="slowScroll('#form-info')">Subscribe</a></li>
+              <li class="menuBtn"><a href="#" onclick="slowScroll('#form-info')">Contact us</a></li>
               <li class="menuBtn"><a href="#" onclick="slowScroll('#footer')">Follow us</a></li>
             </ul>
           </nav>
@@ -54,7 +54,7 @@
         </h1>
       </div>
       <div class="header-btn">
-        <a href="#">Contact us</a>
+        <a href="#" onclick="slowScroll('#form-info')">Contact us</a>
       </div>
     </div>
   </section>
@@ -115,7 +115,7 @@
     <div class="container">
       <div class="section-title">
         <h2>Our services</h2>
-        <p>Lorem ipsum dolor sit amet event landing template</p>
+        <p class="p">Lorem ipsum dolor sit amet event landing template</p>
       </div>
       <div class="our-service__body">
         <div class="our-service__item">
@@ -126,10 +126,7 @@
                 Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most...
               </p>
             </div>
-            <a href="#">
-                Know more
-                <img src="images/arrow-right.png" alt="" />
-              </a>
+            <a class="js-btn" href="#" class="arrow">Know more</a>
           </div>
           <div class="back">
             <h4>Designinf is the cool lover for</h4>
@@ -139,8 +136,7 @@
                 first candidates. You may even catch the client while they’re still online.
               </p>
             </div>
-            <a href="#" class="times"><img src="images/times.png" alt="" />
-            </a>
+            <a href="#" class="times js-btn"></a>
           </div>
         </div>
         <div class="our-service__item">
@@ -151,9 +147,7 @@
                 Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most...
               </p>
             </div>
-            <a href="#">
-                Know more <img src="images/arrow-right.png" alt="" />
-              </a>
+            <a class="js-btn" href="#">Know more</a>
           </div>
           <div class="back">
             <h4>Cool PSD design</h4>
@@ -163,8 +157,7 @@
                 first candidates. You may even catch the client while they’re still online.
               </p>
             </div>
-            <a href="#" class="times more-btn"><img src="images/times.png" alt="" />
-            </a>
+            <a href="#" class="times js-btn"></a>
           </div>
         </div>
         <div class="our-service__item">
@@ -175,8 +168,7 @@
                 Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most...
               </p>
             </div>
-            <a href="#">Know more <img src="images/arrow-right.png" alt=""
-              /></a>
+            <a class="js-btn" href="#">Know more</a>
           </div>
           <div class="back">
             <h4>Designinf is the cool</h4>
@@ -186,8 +178,7 @@
                 first candidates. You may even catch the client while they’re still online.
               </p>
             </div>
-            <a href="#" class="times"><img src="images/times.png" alt="" />
-            </a>
+            <a href="#" class="times js-btn"></a>
           </div>
         </div>
         <div class="our-service__item">
@@ -198,9 +189,7 @@
                 Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most...
               </p>
             </div>
-            <a href="#">
-                Know more <img src="images/arrow-right.png" alt="" />
-              </a>
+            <a class="js-btn" href="#">Know more </a>
           </div>
           <div class="back">
             <h4>PSD to HTML kori</h4>
@@ -210,8 +199,7 @@
                 first candidates. You may even catch the client while they’re still online.
               </p>
             </div>
-            <a href="#" class="times"><img src="images/times.png" alt="" />
-            </a>
+            <a href="#" class="times js-btn"></a>
           </div>
         </div>
         <div class="our-service__item">
@@ -222,9 +210,7 @@
                 Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most...
               </p>
             </div>
-            <a href="#">
-                Know more <img src="images/arrow-right.png" alt="" />
-              </a>
+            <a class="js-btn" href="#">Know more </a>
           </div>
           <div class="back">
             <h4>Cool PSD design</h4>
@@ -234,8 +220,7 @@
                 first candidates. You may even catch the client while they’re still online.
               </p>
             </div>
-            <a href="#" class="times"><img src="images/times.png" alt="" />
-            </a>
+            <a href="#" class="times js-btn"></a>
           </div>
         </div>
         <div class="our-service__item">
@@ -246,10 +231,7 @@
                 Our most popular service is our Virtual Receptionist. We know that sometimes it’s something and you middle most...
               </p>
             </div>
-            <a href="#">
-                Know more
-                <img src="images/arrow-right.png" alt="" />
-              </a>
+            <a class="js-btn" href="#">Know more</a>
           </div>
           <div class="back">
             <h4>Designinf is the cool lover for</h4>
@@ -259,8 +241,7 @@
                 first candidates. You may even catch the client while they’re still online.
               </p>
             </div>
-            <a href="#" class="times"><img src="images/times.png" alt="" />
-            </a>
+            <a href="#" class="times js-btn"></a>
           </div>
         </div>
       </div>
@@ -425,9 +406,9 @@
             </ul>
           </div>
           <div class="map" id="map">
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Oo6BnYrfObU1Xg4KrmnEwJuxyhoB5XN-"></iframe>
-            <!-- <iframe src="https://maps.google.com/maps?width=700&amp;hl=en&amp;q=Ukraine%2C%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
-              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> -->
+            <!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Oo6BnYrfObU1Xg4KrmnEwJuxyhoB5XN-"></iframe> -->
+            <iframe src="https://maps.google.com/maps?width=700&amp;hl=en&amp;q=Ukraine%2C%D0%86%D0%B2%D0%B0%D0%BD%D0%BE-%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D1%96%D0%B2%D1%81%D1%8C%D0%BA+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed"
+              frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
           </div>
         </div>
       </div>
@@ -436,6 +417,7 @@
   <footer id="footer">
     <div class="container"></div>
   </footer>
+  <a href="#" class="scrollup" onclick="slowScroll('#main-title')"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>

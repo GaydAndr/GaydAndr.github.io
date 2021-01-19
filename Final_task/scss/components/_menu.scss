@@ -9,6 +9,9 @@
   left: 0;
   transition: all 0.5s ease;
   overflow: auto;
+  &.active {
+    top: 0vh;
+  }
   ul {
     padding: 30px;
     li {
@@ -24,8 +27,4 @@
       }
     }
   }
-}
-
-#menu.active {
-  top: 0vh;
 }

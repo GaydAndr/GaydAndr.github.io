@@ -1,7 +1,7 @@
 @import "burger";
 @import "menu";
 header {
-  height: 48px;
+  height: 58px;
   width: 100%;
   background: $main-bg-c;
   position: fixed;
@@ -12,7 +12,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 0;
+      padding: 15px 0;
       .logo {
         a {
           display: block;
@@ -33,6 +33,23 @@ header {
         .logo {
           a {
             width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (orientation: landscape) {
+  header {
+    height: 58px;
+    background: rgba($main-bg-c, .8);
+    .container {
+      .topbar {
+        padding: 15px 0;
+        .logo {
+          a {
+            width: 60%;
           }
         }
       }
