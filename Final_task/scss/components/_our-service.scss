@@ -63,6 +63,7 @@
         }
       }
       a {
+        user-select: none;
         text-transform: uppercase;
         font-weight: 300;
         position: absolute;
@@ -128,6 +129,9 @@
       a {
         width: 17px;
         height: 17px;
+        &:hover {
+          box-shadow: 0 0 15px inset #fff, 0 0 10px #fff;
+        }
         &::after {
           width: 100%;
           background: url(../images/times.png) no-repeat;

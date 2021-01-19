@@ -380,6 +380,7 @@ header .container .topbar .logo a {
 }
 .our-service__body .our-service__item .front a,
 .our-service__body .our-service__item .back a {
+  user-select: none;
   text-transform: uppercase;
   font-weight: 300;
   position: absolute;
@@ -446,6 +447,9 @@ header .container .topbar .logo a {
 .our-service__body .our-service__item .back a {
   width: 17px;
   height: 17px;
+}
+.our-service__body .our-service__item .back a:hover {
+  box-shadow: 0 0 15px inset #fff, 0 0 10px #fff;
 }
 .our-service__body .our-service__item .back a::after {
   width: 100%;
