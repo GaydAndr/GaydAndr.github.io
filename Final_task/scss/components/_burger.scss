@@ -1,5 +1,5 @@
 .burger {
-  width: $burger-width-mobile;
+  width: $burger-width;
   height: 28px;
   display: flex;
   justify-content: center;
@@ -10,7 +10,7 @@
   &::after {
     content: "";
     display: block;
-    width: $burger-width-mobile;
+    width: $burger-width;
     height: 4px;
     background: #606061;
     border-radius: 30px;

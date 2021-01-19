@@ -34,7 +34,7 @@
         color: #181919;
         &:hover {
           background-color: $color-spry;
-          color: #181919;
+          border-color: $color-spry;
         }
       }
     }
@@ -55,7 +55,7 @@
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-height: 550px) {
   #main-title {
     .container {
       .main-title {

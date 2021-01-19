@@ -17,6 +17,9 @@ header {
         a {
           display: block;
           width: 60%;
+          &:hover {
+            background: #fff;
+          }
         }
       }
     }
@@ -40,7 +43,7 @@ header {
   }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-height: 550px) {
   header {
     height: 58px;
     background: rgba($main-bg-c, .8);

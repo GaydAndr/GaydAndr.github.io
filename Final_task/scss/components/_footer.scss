@@ -1,0 +1,31 @@
+footer {
+  background: #262b2e;
+  text-align: center;
+  padding: 92px 0;
+  h5,
+  p {
+    font-weight: 300;
+    color: $form-text;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 40px;
+    background: #424648;
+    color: #bbb8b9;
+    font-size: 25px;
+    margin-bottom: 43px;
+    margin-left: 5px;
+    &:hover {
+      color: black;
+      background: $color-spry;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
