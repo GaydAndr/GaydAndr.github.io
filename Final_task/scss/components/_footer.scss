@@ -5,7 +5,9 @@ footer {
   h5,
   p {
     font-weight: 300;
-    color: $form-text;
+    color: $form-footer-text;
+  }
+  h5 {
     font-size: 16px;
     margin-bottom: 20px;
   }
@@ -24,8 +26,5 @@ footer {
       color: black;
       background: $color-spry;
     }
-  }
-  p {
-    margin-bottom: 0;
   }
 }

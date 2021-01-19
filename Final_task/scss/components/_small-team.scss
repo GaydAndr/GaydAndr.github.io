@@ -9,51 +9,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    .info-team {
-      background: rgba($color-spry, 0.5);
-      padding: 20px;
-      position: relative;
-      transition: all 0.9s ease;
-      z-index: 2;
-      h4 {
-        font-weight: 900;
-        span {
-          text-transform: none;
-          font-size: 14px;
-          font-style: italic;
-          color: #757776;
-        }
-      }
-      p {
-        margin: 1em 0;
-      }
-      .social {
-        a {
-          margin-right: 0.8em;
-          color: #214946;
-          font-size: 13px;
-          i {
-            &:hover {
-              color: magenta;
-              transform: scale(2, 2);
-              transition: 0.3s;
-            }
-          }
-        }
-      }
-      &::before {
-        content: "";
-        display: none;
-        height: 20px;
-        width: 20px;
-        background: $color-spry;
-        position: absolute;
-        left: 5%;
-        top: -3%;
-        z-index: 1;
-        transform: scale(1, 1.8) rotate(45deg);
-      }
-    }
     &:hover {
       .info-team {
         background: rgba($color-spry, 1);
@@ -78,6 +33,51 @@
     }
     &:nth-child(6) {
       background: url(../images/sm-t_img-6.png) 50% 0 / cover no-repeat;
+    }
+    .info-team {
+      background: rgba($color-spry, 0.5);
+      padding: 20px;
+      position: relative;
+      transition: all 0.9s ease;
+      z-index: 2;
+      h4 {
+        font-weight: 900;
+        span {
+          text-transform: none;
+          font-size: 14px;
+          font-style: italic;
+          color: #757776;
+        }
+      }
+      p {
+        margin: 1em 0;
+      }
+      .social {
+        &::before {
+          content: "";
+          display: none;
+          height: 20px;
+          width: 20px;
+          background: $color-spry;
+          position: absolute;
+          left: 5%;
+          top: -3%;
+          z-index: 1;
+          transform: scale(1, 1.8) rotate(45deg);
+        }
+        a {
+          margin-right: 0.8em;
+          color: #214946;
+          font-size: 13px;
+          i {
+            &:hover {
+              color: $hover-color;
+              transform: scale(2, 2);
+              transition: 0.3s;
+            }
+          }
+        }
+      }
     }
   }
 }

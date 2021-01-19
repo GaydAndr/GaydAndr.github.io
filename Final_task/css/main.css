@@ -7,6 +7,15 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+body section {
+  padding: 60px 0;
+}
+body section:first-child, body section:last-child, body section:nth-child(2) {
+  padding: 0;
+}
+body section:nth-child(2n+1) {
+  background: #f9fbfb;
+}
 body .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -39,7 +48,6 @@ body .scrollup {
   position: fixed;
   bottom: 5vh;
   right: 5vh;
-  font-weight: 700;
   font-size: 1.5em;
   display: flex;
   justify-content: center;
@@ -57,6 +65,9 @@ body.lock {
 }
 
 @media (min-width: 566px) {
+  body section {
+    padding: 120px 0;
+  }
   body h4 {
     font-size: 20px;
   }
@@ -72,7 +83,7 @@ body.lock {
 }
 .section-title {
   text-align: center;
-  margin: 50px 0 40px;
+  margin: 0 0 60px;
 }
 .section-title h2 {
   margin-bottom: 5px;
@@ -83,10 +94,13 @@ body.lock {
   font-size: 14px;
   font-family: "Merriweather", serif;
   font-weight: 300;
-  color: #848585;
+  color: #616161;
 }
 
 @media (min-width: 566px) {
+  .section-title {
+    margin: 0 0 120px;
+  }
   .section-title h2 {
     font-size: 38px;
   }
@@ -129,19 +143,16 @@ body.lock {
 }
 .burger.active span {
   transform: scale(0);
-  transition: all 0.1s ease;
 }
 .burger.active:before {
   transform: rotate(45deg);
   top: 12px;
   width: 30px;
-  transition: all 0.1s ease;
 }
 .burger.active::after {
   transform: rotate(-45deg);
   bottom: 12px;
   width: 30px;
-  transition: all 0.1s ease;
 }
 
 #menu {
@@ -316,6 +327,7 @@ header .container .topbar .logo a:hover {
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 10px;
 }
+
 @media (min-width: 720px) {
   .featured-works__body {
     grid-template-columns: repeat(3, 1fr);
@@ -367,7 +379,6 @@ header .container .topbar .logo a:hover {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
 }
 .our-service__body .our-service__item .front h4,
 .our-service__body .our-service__item .front .text-container,
@@ -378,7 +389,6 @@ header .container .topbar .logo a:hover {
   color: #f7f7f7;
   position: relative;
   z-index: 2;
-  transition: all 0.5s ease 0.2s;
 }
 .our-service__body .our-service__item .front h4,
 .our-service__body .our-service__item .back h4 {
@@ -515,47 +525,6 @@ header .container .topbar .logo a:hover {
   justify-content: center;
   align-items: flex-end;
 }
-.small-team__body .small-team__item .info-team {
-  background: rgba(112, 245, 234, 0.5);
-  padding: 20px;
-  position: relative;
-  transition: all 0.9s ease;
-  z-index: 2;
-}
-.small-team__body .small-team__item .info-team h4 {
-  font-weight: 900;
-}
-.small-team__body .small-team__item .info-team h4 span {
-  text-transform: none;
-  font-size: 14px;
-  font-style: italic;
-  color: #757776;
-}
-.small-team__body .small-team__item .info-team p {
-  margin: 1em 0;
-}
-.small-team__body .small-team__item .info-team .social a {
-  margin-right: 0.8em;
-  color: #214946;
-  font-size: 13px;
-}
-.small-team__body .small-team__item .info-team .social a i:hover {
-  color: magenta;
-  transform: scale(2, 2);
-  transition: 0.3s;
-}
-.small-team__body .small-team__item .info-team::before {
-  content: "";
-  display: none;
-  height: 20px;
-  width: 20px;
-  background: #70f5ea;
-  position: absolute;
-  left: 5%;
-  top: -3%;
-  z-index: 1;
-  transform: scale(1, 1.8) rotate(45deg);
-}
 .small-team__body .small-team__item:hover .info-team {
   background: #70f5ea;
   opacity: 1;
@@ -578,6 +547,47 @@ header .container .topbar .logo a:hover {
 }
 .small-team__body .small-team__item:nth-child(6) {
   background: url(../images/sm-t_img-6.png) 50% 0/cover no-repeat;
+}
+.small-team__body .small-team__item .info-team {
+  background: rgba(112, 245, 234, 0.5);
+  padding: 20px;
+  position: relative;
+  transition: all 0.9s ease;
+  z-index: 2;
+}
+.small-team__body .small-team__item .info-team h4 {
+  font-weight: 900;
+}
+.small-team__body .small-team__item .info-team h4 span {
+  text-transform: none;
+  font-size: 14px;
+  font-style: italic;
+  color: #757776;
+}
+.small-team__body .small-team__item .info-team p {
+  margin: 1em 0;
+}
+.small-team__body .small-team__item .info-team .social::before {
+  content: "";
+  display: none;
+  height: 20px;
+  width: 20px;
+  background: #70f5ea;
+  position: absolute;
+  left: 5%;
+  top: -3%;
+  z-index: 1;
+  transform: scale(1, 1.8) rotate(45deg);
+}
+.small-team__body .small-team__item .info-team .social a {
+  margin-right: 0.8em;
+  color: #214946;
+  font-size: 13px;
+}
+.small-team__body .small-team__item .info-team .social a i:hover {
+  color: #ffdc44;
+  transform: scale(2, 2);
+  transition: 0.3s;
 }
 
 @media (min-width: 444px) {
@@ -682,6 +692,8 @@ header .container .topbar .logo a:hover {
 }
 #form-info .form-info .form,
 #form-info .form-info .info-map {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
   display: flex;
   flex-direction: column;
   background: rgba(11, 34, 49, 0.6);
@@ -692,16 +704,12 @@ header .container .topbar .logo a:hover {
   justify-content: space-between;
 }
 #form-info .form-info .form .form-control {
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
   width: 100%;
   padding: 10px 0;
   background: none;
   border: none;
   border-bottom: 1px solid #c5c5c5;
   color: #c5c5c5;
-  /* Firefox 19+ */
-  /* Firefox 18- */
 }
 #form-info .form-info .form .form-control::-webkit-input-placeholder {
   color: #c5c5c5;
@@ -730,7 +738,6 @@ header .container .topbar .logo a:hover {
   font-size: 18px;
   background: #70f5ea;
   color: #404141;
-  align-self: center;
 }
 #form-info .form-info .form .form-button:hover {
   background: #ffdc44;
@@ -752,7 +759,6 @@ header .container .topbar .logo a:hover {
 #form-info .form-info .info-map .map iframe {
   height: 224px;
   width: 100%;
-  border: none;
 }
 
 @media (min-width: 566px) {
@@ -762,7 +768,6 @@ header .container .topbar .logo a:hover {
 }
 @media (min-width: 720px) {
   #form-info .form-info {
-    padding: 123px 0;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 26px;
   }
@@ -779,11 +784,6 @@ header .container .topbar .logo a:hover {
     padding: 0 22px 18px;
   }
 }
-@media (min-width: 992px) {
-  #form-info .form-info .form .form-button {
-    align-self: start;
-  }
-}
 footer {
   background: #262b2e;
   text-align: center;
@@ -793,6 +793,8 @@ footer h5,
 footer p {
   font-weight: 300;
   color: #c5c5c5;
+}
+footer h5 {
   font-size: 16px;
   margin-bottom: 20px;
 }
@@ -811,9 +813,6 @@ footer a {
 footer a:hover {
   color: black;
   background: #70f5ea;
-}
-footer p {
-  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
