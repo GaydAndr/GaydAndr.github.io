@@ -10,13 +10,93 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&display=swap" rel="stylesheet" />
   <link href="css/normalize.min.css" rel="stylesheet" />
   <link href="favicon.ico" rel="icon" type="images/x-icon" />
-  <link rel="preload" href="css/main.min.css" as="style" onload="this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="css/main.min.css"></noscript>
+  <link rel="preload" href="css/main.css" as="style" onload="this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="css/main.css" /></noscript>
   <script>
-    /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
-    !function(a){"use strict";var b=function(b,c,d){function j(a){if(e.body)return a();setTimeout(function(){j(a)})}function l(){f.addEventListener&&f.removeEventListener("load",l),f.media=d||"all"}var g,e=a.document,f=e.createElement("link");if(c)g=c;else{var h=(e.body||e.getElementsByTagName("head")[0]).childNodes;g=h[h.length-1]}var i=e.styleSheets;f.rel="stylesheet",f.href=b,f.media="only x",j(function(){g.parentNode.insertBefore(f,c?g:g.nextSibling)});var k=function(a){for(var b=f.href,c=i.length;c--;)if(i[c].href===b)return a();setTimeout(function(){k(a)})};return f.addEventListener&&f.addEventListener("load",l),f.onloadcssdefined=k,k(l),f};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+    /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */ !(function(a) {
+      'use strict';
+      var b = function(b, c, d) {
+        function j(a) {
+          if (e.body) return a();
+          setTimeout(function() {
+            j(a);
+          });
+        }
+
+        function l() {
+          f.addEventListener && f.removeEventListener('load', l),
+            (f.media = d || 'all');
+        }
+        var g,
+          e = a.document,
+          f = e.createElement('link');
+        if (c) g = c;
+        else {
+          var h = (e.body || e.getElementsByTagName('head')[0]).childNodes;
+          g = h[h.length - 1];
+        }
+        var i = e.styleSheets;
+        (f.rel = 'stylesheet'),
+        (f.href = b),
+        (f.media = 'only x'),
+        j(function() {
+          g.parentNode.insertBefore(f, c ? g : g.nextSibling);
+        });
+        var k = function(a) {
+          for (var b = f.href, c = i.length; c--;)
+            if (i[c].href === b) return a();
+          setTimeout(function() {
+            k(a);
+          });
+        };
+        return (
+          f.addEventListener && f.addEventListener('load', l),
+          (f.onloadcssdefined = k),
+          k(l),
+          f
+        );
+      };
+      'undefined' != typeof exports ? (exports.loadCSS = b) : (a.loadCSS = b);
+    })('undefined' != typeof global ? global : this);
     /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
-    !function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(a){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+    !(function(a) {
+      if (a.loadCSS) {
+        var b = (loadCSS.relpreload = {});
+        if (
+          ((b.support = function() {
+              try {
+                return a.document
+                  .createElement('link')
+                  .relList.supports('preload');
+              } catch (a) {
+                return !1;
+              }
+            }),
+            (b.poly = function() {
+              for (
+                var b = a.document.getElementsByTagName('link'), c = 0; c < b.length; c++
+              ) {
+                var d = b[c];
+                'preload' === d.rel &&
+                  'style' === d.getAttribute('as') &&
+                  (a.loadCSS(d.href, d, d.getAttribute('media')),
+                    (d.rel = null));
+              }
+            }), !b.support())
+        ) {
+          b.poly();
+          var c = a.setInterval(b.poly, 300);
+          a.addEventListener &&
+            a.addEventListener('load', function() {
+              b.poly(), a.clearInterval(c);
+            }),
+            a.attachEvent &&
+            a.attachEvent('onload', function() {
+              a.clearInterval(c);
+            });
+        }
+      }
+    })(this);
   </script>
   <script src="https://kit.fontawesome.com/cfc9a07a30.js"></script>
 </head>
@@ -85,7 +165,30 @@
         <p>Lorem ipsum dolor sit amet event landing template</p>
       </div>
       <div class="about-us__body">
-        <div class="slider"></div>
+        <div class="slider">
+          <div class="slideshow-container">
+            <div class="mySlides1 fade">
+              <img src="images/about_us-1.webp" />
+            </div>
+            <div class="mySlides1 fade">
+              <img src="images/about_us-2.webp" />
+            </div>
+            <div class="mySlides1 fade">
+              <img src="images/about_us-3.webp" />
+            </div>
+            <div class="mySlides1 fade">
+              <img src="images/about_us-4.webp" />
+            </div>
+            <div class="slider-bg"></div>
+          </div>
+          <div class="dots">
+            <span class="my-dot1 dot"></span>
+            <span class="my-dot1 dot"></span>
+            <span class="my-dot1 dot"></span>
+            <span class="my-dot1 dot"></span>
+          </div>
+        </div>
+
         <div class="about-us__text">
           <h4>We Actually Do amazing works</h4>
           <p>
@@ -380,12 +483,37 @@
     </div>
   </section>
   <section id="what-they-says">
-    <div class="container">
+    <!-- <div class="container">
       <div class="section-title">
         <h2>What thay says</h2>
         <p>Lorem ipsum dolor sit amet event landing template</p>
       </div>
-    </div>
+      <div class="slider">
+        <div class="slideshow-container">
+          <div class="mySlides2 fade">
+            <img src="images/sm-t_img-1.webp" />
+          </div>
+
+          <div class="mySlides2 fade">
+            <img src="images/sm-t_img-2.webp" />
+          </div>
+
+          <div class="mySlides2 fade">
+            <img src="images/sm-t_img-3.webp" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          <div class="slider-bg"></div>
+        </div>
+        <div>
+          <span class="my-dot1 dot"></span>
+          <span class="my-dot1 dot"></span>
+          <span class="my-dot1 dot"></span>
+          <span class="my-dot1 dot"></span>
+        </div>
+      </div>
+    </div> -->
   </section>
   <section id="logos">
     <div class="container">
@@ -496,7 +624,7 @@
         <a class="scrollup" href="#" onclick="slowScroll('#main-title')"><i aria-hidden="true" class="fas fa-arrow-up"></i
     ></a>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="js/main.min.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

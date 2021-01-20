@@ -3,9 +3,8 @@
     display: flex;
     flex-wrap: wrap;
     .slider {
-      width: 100%;
-      background: $main-bg-c;
-      margin: 0 0 20px;
+      margin: 0 auto 90px;
+      height: 90%;
     }
     .about-us__text {
       h4 {
@@ -17,6 +16,20 @@
         margin: 15px 0;
         color: $text-color;
         font-size: $text-fz;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+@media (min-width: 566px) {
+  #about-us {
+    .about-us__body {
+      .about-us__text {
+        padding: 0 20px;
+        p {
+          line-height: 28px;
+        }
       }
     }
   }
@@ -30,6 +43,12 @@
       .about-us__text {
         padding: 0 20px;
         flex: 1;
+        h4 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
       }
     }
   }
