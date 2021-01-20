@@ -3,17 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Montserrat", sans-serif;
 }
 body section {
   padding: 60px 0;
 }
-body section:first-child, body section:last-child, body section:nth-child(2) {
+body section:first-child,
+body section:last-child,
+body section:nth-child(2) {
   padding: 0;
 }
-body section:nth-child(2n+1) {
+body section:nth-child(2n + 1) {
   background: #f9fbfb;
 }
 body .container {
@@ -59,11 +60,9 @@ body .scrollup {
 body .scrollup:hover {
   background: #70f5ea;
 }
-
 body.lock {
   overflow: hidden;
 }
-
 @media (min-width: 566px) {
   body section {
     padding: 120px 0;
@@ -96,7 +95,6 @@ body.lock {
   font-weight: 300;
   color: #616161;
 }
-
 @media (min-width: 566px) {
   .section-title {
     margin: 0 0 120px;
@@ -117,7 +115,8 @@ body.lock {
   position: relative;
   z-index: 10;
 }
-.burger::before, .burger::after {
+.burger::before,
+.burger::after {
   content: "";
   display: block;
   width: 30px;
@@ -154,7 +153,6 @@ body.lock {
   bottom: 12px;
   width: 30px;
 }
-
 #menu {
   display: block;
   min-height: 100vh;
@@ -191,7 +189,6 @@ body.lock {
 #menu ul li a:hover {
   background-color: #70f5ea;
 }
-
 header {
   height: 58px;
   width: 100%;
@@ -213,7 +210,6 @@ header .container .topbar .logo a {
 header .container .topbar .logo a:hover {
   background: #fff;
 }
-
 @media (min-width: 720px) {
   header {
     height: 86px;
@@ -278,7 +274,6 @@ header .container .topbar .logo a:hover {
   background-color: #70f5ea;
   border-color: #70f5ea;
 }
-
 @media (min-width: 720px) {
   #main-title .container .main-title h1 {
     font-size: 45px;
@@ -310,13 +305,12 @@ header .container .topbar .logo a:hover {
   color: #404141;
   font-size: 14px;
 }
-
 @media (min-width: 720px) {
   #about-us .about-us__body {
     flex-wrap: nowrap;
   }
   #about-us .about-us__body .slider,
-#about-us .about-us__body .about-us__text {
+  #about-us .about-us__body .about-us__text {
     padding: 0 20px;
     flex: 1;
   }
@@ -327,7 +321,6 @@ header .container .topbar .logo a:hover {
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 10px;
 }
-
 @media (min-width: 720px) {
   .featured-works__body {
     grid-template-columns: repeat(3, 1fr);
@@ -345,22 +338,22 @@ header .container .topbar .logo a:hover {
   height: 300px;
 }
 .our-service__body .our-service__item:nth-child(1) {
-  background: url(../images/our-s_img-1.webp) 0 0/cover no-repeat;
+  background: url(../images/our-s_img-1.webp) 0 0 / cover no-repeat;
 }
 .our-service__body .our-service__item:nth-child(2) {
-  background: url(../images/our-s_img-2.webp) 0 0/cover no-repeat;
+  background: url(../images/our-s_img-2.webp) 0 0 / cover no-repeat;
 }
 .our-service__body .our-service__item:nth-child(3) {
-  background: url(../images/our-s_img-3.webp) 0 0/cover no-repeat;
+  background: url(../images/our-s_img-3.webp) 0 0 / cover no-repeat;
 }
 .our-service__body .our-service__item:nth-child(4) {
-  background: url(../images/our-s_img-4.webp) 0 0/cover no-repeat;
+  background: url(../images/our-s_img-4.webp) 0 0 / cover no-repeat;
 }
 .our-service__body .our-service__item:nth-child(5) {
-  background: url(../images/our-s_img-5.webp) 0 0/cover no-repeat;
+  background: url(../images/our-s_img-5.webp) 0 0 / cover no-repeat;
 }
 .our-service__body .our-service__item:nth-child(6) {
-  background: url(../images/our-s_img-6.webp) 0 0/cover no-repeat;
+  background: url(../images/our-s_img-6.webp) 0 0 / cover no-repeat;
 }
 .our-service__body .our-service__item .front,
 .our-service__body .our-service__item .back {
@@ -413,7 +406,8 @@ header .container .topbar .logo a:hover {
   position: absolute;
   bottom: 28px;
 }
-.our-service__body .our-service__item .front a::before, .our-service__body .our-service__item .front a::after,
+.our-service__body .our-service__item .front a::before,
+.our-service__body .our-service__item .front a::after,
 .our-service__body .our-service__item .back a::before,
 .our-service__body .our-service__item .back a::after {
   content: "";
@@ -482,15 +476,14 @@ header .container .topbar .logo a:hover {
   width: 100%;
   background: url(../images/times.webp) no-repeat;
 }
-
 @media (min-width: 566px) {
   .our-service__body .our-service__item .front .text-container p,
-.our-service__body .our-service__item .back .text-container p {
+  .our-service__body .our-service__item .back .text-container p {
     font-family: "Raleway", sans-serif;
     font-size: 16px;
   }
   .our-service__body .our-service__item .front a,
-.our-service__body .our-service__item .back a {
+  .our-service__body .our-service__item .back a {
     font-size: 18px;
   }
 }
@@ -499,14 +492,16 @@ header .container .topbar .logo a:hover {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
-  .our-service__body .our-service__item:nth-child(1), .our-service__body .our-service__item:nth-child(3) {
+  .our-service__body .our-service__item:nth-child(1),
+  .our-service__body .our-service__item:nth-child(3) {
     grid-column: 1/8;
   }
-  .our-service__body .our-service__item:nth-child(2), .our-service__body .our-service__item:nth-child(4) {
+  .our-service__body .our-service__item:nth-child(2),
+  .our-service__body .our-service__item:nth-child(4) {
     grid-column: 8/13;
   }
   .our-service__body .our-service__item:nth-child(5) {
-    grid-column: 1/span 5;
+    grid-column: 1 / span 5;
   }
   .our-service__body .our-service__item:nth-child(6) {
     grid-column: 6/13;
@@ -531,22 +526,22 @@ header .container .topbar .logo a:hover {
   visibility: visible;
 }
 .small-team__body .small-team__item:nth-child(1) {
-  background: url(../images/sm-t_img-1.webp) 50% 0/cover no-repeat;
+  background: url(../images/sm-t_img-1.webp) 50% 0 / cover no-repeat;
 }
 .small-team__body .small-team__item:nth-child(2) {
-  background: url(../images/sm-t_img-2.webp) 50% 0/cover no-repeat;
+  background: url(../images/sm-t_img-2.webp) 50% 0 / cover no-repeat;
 }
 .small-team__body .small-team__item:nth-child(3) {
-  background: url(../images/sm-t_img-3.webp) 50% 0/cover no-repeat;
+  background: url(../images/sm-t_img-3.webp) 50% 0 / cover no-repeat;
 }
 .small-team__body .small-team__item:nth-child(4) {
-  background: url(../images/sm-t_img-4.webp) 50% 0/cover no-repeat;
+  background: url(../images/sm-t_img-4.webp) 50% 0 / cover no-repeat;
 }
 .small-team__body .small-team__item:nth-child(5) {
-  background: url(../images/sm-t_img-5.webp) 50% 0/cover no-repeat;
+  background: url(../images/sm-t_img-5.webp) 50% 0 / cover no-repeat;
 }
 .small-team__body .small-team__item:nth-child(6) {
-  background: url(../images/sm-t_img-6.webp) 50% 0/cover no-repeat;
+  background: url(../images/sm-t_img-6.webp) 50% 0 / cover no-repeat;
 }
 .small-team__body .small-team__item .info-team {
   background: rgba(112, 245, 234, 0.5);
@@ -589,7 +584,6 @@ header .container .topbar .logo a:hover {
   transform: scale(2, 2);
   transition: 0.3s;
 }
-
 @media (min-width: 444px) {
   .small-team__body .small-team__item {
     min-height: 440px;
@@ -646,7 +640,6 @@ header .container .topbar .logo a:hover {
   max-width: 125px;
   margin: 0 auto;
 }
-
 @media (min-width: 720px) {
   .logos {
     grid-template-columns: repeat(12, 1fr);
@@ -682,7 +675,7 @@ header .container .topbar .logo a:hover {
   }
 }
 #form-info {
-  background: url(../images/bottom-bg.webp) 50% 0/cover no-repeat;
+  background: url(../images/bottom-bg.webp) 50% 0 / cover no-repeat;
 }
 #form-info .form-info {
   padding: 80px 0;
@@ -760,7 +753,6 @@ header .container .topbar .logo a:hover {
   height: 224px;
   width: 100%;
 }
-
 @media (min-width: 566px) {
   #form-info .form-info .form .form-button {
     width: 246px;
@@ -814,5 +806,4 @@ footer a:hover {
   color: black;
   background: #70f5ea;
 }
-
 /*# sourceMappingURL=main.css.map */
