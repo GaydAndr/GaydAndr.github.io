@@ -239,7 +239,7 @@ header .container .topbar .logo a:hover {
   }
 }
 #main-title {
-  background: #eff0f2 url(../images/Glass.png) 70vw 80vh/70px 70px no-repeat;
+  background: #eff0f2 url(../images/Glass.webp) 70vw 80vh/70px 70px no-repeat;
   height: 100vh;
 }
 #main-title .container {
@@ -345,22 +345,22 @@ header .container .topbar .logo a:hover {
   height: 300px;
 }
 .our-service__body .our-service__item:nth-child(1) {
-  background: url(../images/our-s_img-1.png) 0 0/cover no-repeat;
+  background: url(../images/our-s_img-1.webp) 0 0/cover no-repeat;
 }
 .our-service__body .our-service__item:nth-child(2) {
-  background: url(../images/our-s_img-2.png) 0 0/cover no-repeat;
+  background: url(../images/our-s_img-2.webp) 0 0/cover no-repeat;
 }
 .our-service__body .our-service__item:nth-child(3) {
-  background: url(../images/our-s_img-3.png) 0 0/cover no-repeat;
+  background: url(../images/our-s_img-3.webp) 0 0/cover no-repeat;
 }
 .our-service__body .our-service__item:nth-child(4) {
-  background: url(../images/our-s_img-4.png) 0 0/cover no-repeat;
+  background: url(../images/our-s_img-4.webp) 0 0/cover no-repeat;
 }
 .our-service__body .our-service__item:nth-child(5) {
-  background: url(../images/our-s_img-5.png) 0 0/cover no-repeat;
+  background: url(../images/our-s_img-5.webp) 0 0/cover no-repeat;
 }
 .our-service__body .our-service__item:nth-child(6) {
-  background: url(../images/our-s_img-6.png) 0 0/cover no-repeat;
+  background: url(../images/our-s_img-6.webp) 0 0/cover no-repeat;
 }
 .our-service__body .our-service__item .front,
 .our-service__body .our-service__item .back {
@@ -447,7 +447,7 @@ header .container .topbar .logo a:hover {
 .our-service__body .our-service__item .front a::after {
   width: 22px;
   left: 110%;
-  background: url(../images/arrow-right.png) no-repeat;
+  background: url(../images/arrow-right.webp) no-repeat;
 }
 .our-service__body .our-service__item .back {
   top: -100%;
@@ -480,7 +480,7 @@ header .container .topbar .logo a:hover {
 }
 .our-service__body .our-service__item .back a::after {
   width: 100%;
-  background: url(../images/times.png) no-repeat;
+  background: url(../images/times.webp) no-repeat;
 }
 
 @media (min-width: 566px) {
@@ -531,22 +531,22 @@ header .container .topbar .logo a:hover {
   visibility: visible;
 }
 .small-team__body .small-team__item:nth-child(1) {
-  background: url(../images/sm-t_img-1.png) 50% 0/cover no-repeat;
+  background: url(../images/sm-t_img-1.webp) 50% 0/cover no-repeat;
 }
 .small-team__body .small-team__item:nth-child(2) {
-  background: url(../images/sm-t_img-2.png) 50% 0/cover no-repeat;
+  background: url(../images/sm-t_img-2.webp) 50% 0/cover no-repeat;
 }
 .small-team__body .small-team__item:nth-child(3) {
-  background: url(../images/sm-t_img-3.png) 50% 0/cover no-repeat;
+  background: url(../images/sm-t_img-3.webp) 50% 0/cover no-repeat;
 }
 .small-team__body .small-team__item:nth-child(4) {
-  background: url(../images/sm-t_img-4.png) 50% 0/cover no-repeat;
+  background: url(../images/sm-t_img-4.webp) 50% 0/cover no-repeat;
 }
 .small-team__body .small-team__item:nth-child(5) {
-  background: url(../images/sm-t_img-5.png) 50% 0/cover no-repeat;
+  background: url(../images/sm-t_img-5.webp) 50% 0/cover no-repeat;
 }
 .small-team__body .small-team__item:nth-child(6) {
-  background: url(../images/sm-t_img-6.png) 50% 0/cover no-repeat;
+  background: url(../images/sm-t_img-6.webp) 50% 0/cover no-repeat;
 }
 .small-team__body .small-team__item .info-team {
   background: rgba(112, 245, 234, 0.5);
@@ -682,7 +682,7 @@ header .container .topbar .logo a:hover {
   }
 }
 #form-info {
-  background: url(../images/bottom-bg.png) 50% 0/cover no-repeat;
+  background: url(../images/bottom-bg.webp) 50% 0/cover no-repeat;
 }
 #form-info .form-info {
   padding: 80px 0;
