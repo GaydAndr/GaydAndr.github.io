@@ -69,16 +69,14 @@ const adults = arr.filter((arr) => {
 const nameAdults = adults.map((person) => person.name);
 console.log(nameAdults);
 
-let personIra;
+let personIra = 'Ірина';
 for (let i = 0; i < arr.length; i++) {
-  if (arr[i].name === 'Ірина') {
-    personIra = arr[i];
+  if (arr[i].name === `${personIra}`) {
+    console.log(arr[i]);
   }
 }
 
 const personBorus = arr.find((arr) => arr.name === 'Борис');
-
-console.log(personIra);
 console.log(personBorus);
 
 // console.log(user2.name.startsWith('Євгенія'));
