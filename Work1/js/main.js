@@ -71,6 +71,8 @@ class FilterService {
   }
 }
 
+// ==========================
+
 let people = [];
 
 const filterService = new FilterService({
@@ -151,33 +153,40 @@ people.push(
   user9,
   user10
 );
+
+// Інформація про всіх users
 people.forEach((person) => console.log(person.byInfo));
 
-console.log('\n');
+console.log('\n'); //------------------------------
 
+// Пошук старших ніж 20
 const olderThan = filterService.filterByAge(20);
 
 olderThan.forEach(function (person) {
   console.log(person.byName);
 });
 
-console.log('\n');
+console.log('\n'); //------------------------------
 
+// Пошук по буквах в email
 let startsithEmail = filterService.findEmail('a');
 
 startsithEmail.forEach(function (person) {
   console.log(person.byInfo);
 });
 
-console.log('\n');
+console.log('\n'); //----------------------------------
 
+// Пошук за іменем
 let findName = 'Олена';
 const byName = filterService.findByName(`${findName}`);
 console.log(byName);
 
-console.log('\n');
+console.log('\n'); //------------------------------
 
+// Пошук за віком min max
 const maxAge = filterService.filterByMaxAge();
 console.log(maxAge);
+
 const minAge = filterService.filterByMinAge();
 console.log(minAge);
