@@ -1,3 +1,5 @@
+'use strict';
+
 class Users {
   constructor(op) {
     this.name = op.name;
@@ -8,90 +10,174 @@ class Users {
   get byName() {
     return this.name;
   }
+  get byAge() {
+    return this.age;
+  }
+  get byInfo() {
+    return `Name: ${this.name},\t Age: ${this.age},\t Email: ${this.email},\t Phone: ${this.phone}`;
+  }
 }
 
-function createUser(name, age, email, phone) {
-  return new Users({
-    name: name,
-    age: age,
-    email: email,
-    phone: phone,
-  });
+class FilterService {
+  constructor(op) {
+    this.users = op.users;
+  }
+  createNewUser(name, age, email, phone) {
+    return new Users({
+      name: name,
+      age: age,
+      email: email,
+      phone: '+380' + phone,
+    });
+  }
+  filterByAge(age) {
+    const adults = [];
+    for (let i = 0; i < this.users.length; i++) {
+      if (this.users[i].age >= age) {
+        adults.push(this.users[i]);
+      }
+    }
+    return adults;
+  }
+  findEmail(startsithEmail) {
+    const emailSW = [];
+    for (let i = 0; i < this.users.length; i++) {
+      if (this.users[i].email.startsWith(`${startsithEmail}`)) {
+        emailSW.push(this.users[i]);
+      }
+    }
+    return emailSW;
+  }
+  findByName(name) {
+    const findName = people.find((users) => users.name === `${name}`);
+    return findName;
+  }
+  filterByMaxAge() {
+    for (let i = 0; i < this.users.length; i++) {
+      if (this.users[i].age > this.users[0].age) {
+        this.users[0] = this.users[i];
+      }
+    }
+    return this.users[0];
+  }
+
+  filterByMinAge() {
+    for (let i = 0; i < this.users.length; i++) {
+      if (this.users[i].age < this.users[0].age) {
+        this.users[0] = this.users[i];
+      }
+    }
+    return this.users[0];
+  }
 }
 
-const user1 = createUser('Валентина', 25, 'anton14@ukr.net', '0930362468');
-const user2 = createUser('Євгенія', 21, 'bkravcuk@gmail.com', '0968145990');
-const user3 = createUser('Борис', 17, 'leonid16@gmail.com', '0963888147');
-const user4 = createUser('Григорій', 16, 'sergienko@ukr.net', '0968145990');
-const user5 = createUser('Тетяна', 19, 'paravcuk@mail.ru', '0670303201');
-const user6 = createUser("B'ячеслав", 20, 'vchlav73@gmail.com', '063572472');
-const user7 = createUser('Олена', 22, 'wsereda@ukr.net', '0935942011');
-const user8 = createUser('Любов', 21, 'aroslavna43@mail.ru', '0968030980');
-const user9 = createUser('Микола', 14, 'gnatuk@mail.ru', '0963888147');
-const user10 = createUser('Ірина', 21, 'kravcuk@gmail.com', '0936436592');
+let people = [];
 
-let arr = [];
-arr.push(user1, user2, user3, user4, user5, user6, user7, user8, user9, user10);
-console.log(arr);
+const filterService = new FilterService({
+  users: people,
+});
 
-// for (let i = 0; i < arr.length; i++) {
-//   console.log(arr[i]);
-// }
+//! =======================================
+const user1 = filterService.createNewUser(
+  'Валентина',
+  25,
+  'anton14@ukr.net',
+  '930362468'
+);
+const user2 = filterService.createNewUser(
+  'Євгенія',
+  40,
+  'bkravcuk@gmail.com',
+  '968145990'
+);
+const user3 = filterService.createNewUser(
+  'Борис',
+  17,
+  'leonid16@gmail.com',
+  '963888147'
+);
+const user4 = filterService.createNewUser(
+  'Григорій',
+  16,
+  'sergienko@ukr.net',
+  '968145990'
+);
+const user5 = filterService.createNewUser(
+  'Тетяна',
+  19,
+  'paravcuk@mail.ru',
+  '670303201'
+);
+const user6 = filterService.createNewUser(
+  "B'ячеслав",
+  20,
+  'vchlav73@gmail.com',
+  '63572472'
+);
+const user7 = filterService.createNewUser(
+  'Олена',
+  22,
+  'wsereda@ukr.net',
+  '935942011'
+);
+const user8 = filterService.createNewUser(
+  'Любов',
+  21,
+  'aroslavna43@mail.ru',
+  '968030980'
+);
+const user9 = filterService.createNewUser(
+  'Микола',
+  14,
+  'gnatuk@mail.ru',
+  '963888147'
+);
+const user10 = filterService.createNewUser(
+  'Ірина',
+  31,
+  'kravcuk@gmail.com',
+  '936436592'
+);
+//!------------------------------------------------
+people.push(
+  user1,
+  user2,
+  user3,
+  user4,
+  user5,
+  user6,
+  user7,
+  user8,
+  user9,
+  user10
+);
+people.forEach((person) => console.log(person.byInfo));
 
-arr.forEach(function (person) {
+console.log('\n');
+
+const olderThan = filterService.filterByAge(20);
+
+olderThan.forEach(function (person) {
   console.log(person.byName);
 });
-// arr.forEach((person) => console.log(person.byName));
 
-// arr.forEach((person) =>
-//   console.log(
-//     `Name: ${person.name}, Age: ${person.age}, Email: ${person.email}, Phone: ${person.phone}`
-//   )
-// );
+console.log('\n');
 
-// const newArrPhone = arr.map((person) => '+38' + person.phone);
-// console.log(newArrPhone);
+let startsithEmail = filterService.findEmail('a');
 
-// const adults = [];
-// for (let i = 0; i < arr.length; i++) {
-//   if (arr[i].age >= 18) {
-//     adults.push(arr[i]);
-//   }
-// }
-
-const adults = arr.filter((arr) => {
-  if (arr.age >= 18) {
-    return true;
-  }
-});
-// const adults = arr.filter((arr) => arr.age >= 18);
-
-const nameAdults = adults.map((person) => person.name);
-console.log(nameAdults);
-
-let personIra = 'Ірина';
-for (let i = 0; i < arr.length; i++) {
-  if (arr[i].name === `${personIra}`) {
-    console.log(arr[i]);
-  }
-}
-
-const personBorus = arr.find((arr) => arr.name === 'Борис');
-console.log(personBorus);
-
-// console.log(user2.name.startsWith('Євгенія'));
-
-// arr.forEach(function (person) {
-//   console.log(person.email.startsWith('kra'));
-// });
-
-let startsWith = 'a';
-arr.forEach((person) => console.log(person.email.startsWith(`${startsWith}`)));
-
-const emailPerson = arr.map((person) => {
-  if (person.email.startsWith(`${startsWith}`)) {
-    return true;
-  }
+startsithEmail.forEach(function (person) {
+  console.log(person.byInfo);
 });
 
-console.log(emailPerson);
+console.log('\n');
+
+let findName = 'Олена';
+const byName = filterService.findByName(`${findName}`);
+console.log(byName);
+
+console.log('\n');
+
+const maxAge = filterService.filterByMaxAge();
+console.log(maxAge);
+const minAge = filterService.filterByMinAge();
+console.log(minAge);
