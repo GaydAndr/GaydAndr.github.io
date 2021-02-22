@@ -13,15 +13,13 @@ class Users {
   get byAge() {
     return this.age;
   }
-  get byInfo() {
-    return `Name: ${this.name},\t Age: ${this.age},\t Email: ${this.email},\t Phone: ${this.phone}`;
-  }
 }
 
 class FilterService {
   constructor(op) {
     this.users = op.users;
   }
+
   createNewUser(name, age, email, phone) {
     return new Users({
       name: name,
@@ -30,44 +28,104 @@ class FilterService {
       phone: '+380' + phone,
     });
   }
+
+  //---------------------------------------
+
   filterByAge(age) {
-    const adults = [];
-    for (let i = 0; i < this.users.length; i++) {
-      if (this.users[i].age >= age) {
-        adults.push(this.users[i]);
-      }
+    if (this.users.length == 0) {
+      console.log('Error');
+    } else {
+      const adults = this.users.filter((person) => {
+        if (person.age >= age) {
+          return true;
+        }
+      });
+
+      this.printUsers(adults);
     }
-    return adults;
-  }
-  findEmail(startsithEmail) {
-    const emailSW = [];
-    for (let i = 0; i < this.users.length; i++) {
-      if (this.users[i].email.startsWith(`${startsithEmail}`)) {
-        emailSW.push(this.users[i]);
-      }
-    }
-    return emailSW;
-  }
-  findByName(name) {
-    const findName = people.find((users) => users.name === `${name}`);
-    return findName;
-  }
-  filterByMaxAge() {
-    for (let i = 0; i < this.users.length; i++) {
-      if (this.users[i].age > this.users[0].age) {
-        this.users[0] = this.users[i];
-      }
-    }
-    return this.users[0];
   }
 
-  filterByMinAge() {
-    for (let i = 0; i < this.users.length; i++) {
-      if (this.users[i].age < this.users[0].age) {
-        this.users[0] = this.users[i];
-      }
+  //---------------------------------------
+
+  findEmail(startsithEmail) {
+    if (this.users.length == 0) {
+      console.log('Error');
+    } else {
+      const emailSW = this.users.filter((person) => {
+        if (person.email.startsWith(`${startsithEmail}`)) {
+          return true;
+        }
+      });
+      this.printUsers(emailSW);
     }
-    return this.users[0];
+  }
+
+  //---------------------------------------
+
+  findByName(name) {
+    if (this.users.length == 0) {
+      console.log('Error');
+    } else {
+      const findName = people.find((users) => {
+        if (users.name === `${name}`) {
+          return true;
+        }
+      });
+      this.printUsers(findName);
+    }
+  }
+
+  //---------------------------------------
+
+  filterByMaxAge() {
+    if (this.users.length == 0) {
+      console.log('Error');
+    } else {
+      let user;
+      let maxAge = this.users[0].age;
+      for (let i = 0; i < this.users.length; i++) {
+        if (this.users[i].age > maxAge) {
+          maxAge = this.users[i];
+          user = this.users[i];
+        }
+      }
+      this.printUsers(user);
+    }
+  }
+
+  //---------------------------------------
+
+  filterByMinAge() {
+    if (this.users.length == 0) {
+      console.log('Error');
+    } else {
+      let user;
+      let minAge = this.users[0].age;
+      for (let i = 0; i < this.users.length; i++) {
+        if (this.users[i].age < minAge) {
+          minAge = this.users[i].age;
+          user = this.users[i];
+        }
+      }
+      this.printUsers(user);
+    }
+  }
+
+  //---------------------------------------
+
+  printUsers(users) {
+    function isArray(users) {
+      return Array.isArray(users);
+    }
+    if (isArray(users) == true) {
+      users.forEach((person) =>
+        console.log(
+          `Name: ${person.name},\t Age: ${person.age},\t Email: ${person.email},\t Phone: ${person.phone}`
+        )
+      );
+    } else {
+      console.log(users);
+    }
   }
 }
 
@@ -155,38 +213,28 @@ people.push(
 );
 
 // Інформація про всіх users
-people.forEach((person) => console.log(person.byInfo));
+
+filterService.printUsers(people);
 
 console.log('\n'); //------------------------------
 
 // Пошук старших ніж 20
 const olderThan = filterService.filterByAge(20);
 
-olderThan.forEach(function (person) {
-  console.log(person.byName);
-});
-
 console.log('\n'); //------------------------------
 
 // Пошук по буквах в email
 let startsithEmail = filterService.findEmail('a');
-
-startsithEmail.forEach(function (person) {
-  console.log(person.byInfo);
-});
 
 console.log('\n'); //----------------------------------
 
 // Пошук за іменем
 let findName = 'Олена';
 const byName = filterService.findByName(`${findName}`);
-console.log(byName);
 
 console.log('\n'); //------------------------------
 
 // Пошук за віком min max
 const maxAge = filterService.filterByMaxAge();
-console.log(maxAge);
 
 const minAge = filterService.filterByMinAge();
-console.log(minAge);
