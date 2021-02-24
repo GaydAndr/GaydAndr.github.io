@@ -238,3 +238,20 @@ console.log('\n'); //------------------------------
 const maxAge = filterService.filterByMaxAge();
 
 const minAge = filterService.filterByMinAge();
+
+const arr = [9, 4, 3, 7, 8, 1, 5, 6, 0, 2];
+bubbleSort(arr);
+
+function bubbleSort(arr) {
+  for (let n = 0; n < arr.length; n++) {
+    for (let i = 0; i < arr.length - 1 - n; i++) {
+      if (arr[i] > arr[i + 1]) {
+        const a = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = a;
+      }
+    }
+  }
+
+  console.log(arr);
+}
