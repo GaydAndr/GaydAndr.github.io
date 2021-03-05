@@ -1,1 +1,1 @@
-# GaydAndr.github.io
+# https://gaydandr.github.io/
