@@ -129,11 +129,52 @@ class FilterService {
   }
 }
 
+class SortServise {
+  constructor(op) {
+    this.users = op.users;
+  }
+  bubbleAgeSort() {
+    if (this.users.length == 0) {
+      console.log('Error');
+    } else {
+      let users;
+      for (let n = 0; n < this.users.length; n++) {
+        for (let i = 0; i < this.users.length - 1 - n; i++) {
+          if (this.users[i].age > this.users[i + 1].age) {
+            const a = this.users[i];
+            this.users[i] = this.users[i + 1];
+            this.users[i + 1] = a;
+            users = this.users;
+          }
+        }
+      }
+      this.printUsers(users);
+    }
+  }
+  printUsers(users) {
+    function isArray(users) {
+      return Array.isArray(users);
+    }
+    if (isArray(users) == true) {
+      users.forEach((person) =>
+        console.log(
+          `Name: ${person.name},\t Age: ${person.age},\t Email: ${person.email},\t Phone: ${person.phone}`
+        )
+      );
+    } else {
+      console.log(users);
+    }
+  }
+}
+
 // ==========================
 
 let people = [];
 
 const filterService = new FilterService({
+  users: people,
+});
+const sortServise = new SortServise({
   users: people,
 });
 
@@ -239,19 +280,6 @@ const maxAge = filterService.filterByMaxAge();
 
 const minAge = filterService.filterByMinAge();
 
-const arr = [9, 4, 3, 7, 8, 1, 5, 6, 0, 2];
-bubbleSort(arr);
+console.log('\n'); //------------------------------
 
-function bubbleSort(arr) {
-  for (let n = 0; n < arr.length; n++) {
-    for (let i = 0; i < arr.length - 1 - n; i++) {
-      if (arr[i] > arr[i + 1]) {
-        const a = arr[i];
-        arr[i] = arr[i + 1];
-        arr[i + 1] = a;
-      }
-    }
-  }
-
-  console.log(arr);
-}
+const sortAge = sortServise.bubbleAgeSort();
